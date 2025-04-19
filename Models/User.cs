@@ -1,5 +1,8 @@
-﻿namespace WebApplication1.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebApplication1.Models
 {
+    [Table("Users")]
     public class User
     {
         public int UserID { get; set; }

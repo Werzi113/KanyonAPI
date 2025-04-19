@@ -1,5 +1,9 @@
-﻿namespace WebApplication1.Models
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebApplication1.Models
 {
+    [Table("CategoryParameters")]
     public class CategoryParameter
     {
         public int ParameterID { get; set; }

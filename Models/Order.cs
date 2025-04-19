@@ -1,5 +1,8 @@
-﻿namespace WebApplication1.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebApplication1.Models
 {
+    [Table("Orders")]
     public class Order
     {
         public int OrderID { get; set; }

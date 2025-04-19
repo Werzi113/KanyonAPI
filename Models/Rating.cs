@@ -2,6 +2,7 @@
 
 namespace WebApplication1.Models
 {
+    [Table("Ratings")]
     public class Rating
     {
         public int RatingID { get; set; }

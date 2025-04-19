@@ -1,7 +1,9 @@
-﻿using System.Security.Permissions;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Security.Permissions;
 
 namespace WebApplication1.Models
 {
+    [Table("Transactions")]
     public class Transaction
     {
         public int TransactionID { get; set; }
@@ -17,8 +19,5 @@ namespace WebApplication1.Models
         public string PhoneNumber {  get; set; }
         public string Street { get; set; }
         public decimal ShippingFee { get; set; }
-
-
-
     }
 }

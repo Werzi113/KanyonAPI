@@ -24,7 +24,7 @@ namespace WebApplication1
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=mysqlstudenti.litv.sssvt.cz;database=sibrava_db1;user=sibravaread;password=123456;SslMode=none");
+            optionsBuilder.UseMySQL("server=mysqlstudenti.litv.sssvt.cz;database=3b1_safranekjan_db2;user=safranekjan;password=123456;SslMode=none");
         }
 
     }
