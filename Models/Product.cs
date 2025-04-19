@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.CompilerServices;
 
 namespace WebApplication1.Models
@@ -6,6 +7,7 @@ namespace WebApplication1.Models
     [Table("Products")]
     public class Product
     {
+        [Key]
         public int ProductID { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Permissions;
 
 namespace WebApplication1.Models
@@ -6,6 +7,7 @@ namespace WebApplication1.Models
     [Table("Transactions")]
     public class Transaction
     {
+        [Key]
         public int TransactionID { get; set; }
         public string PaymentMethod { get; set; }
         public bool Status { get; set; }

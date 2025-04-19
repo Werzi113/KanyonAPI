@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication1.Models
 {
     [Table("ProductPictures")]
     public class ProductPicture
     {
+        [Key]
         public int PictureID { get; set; }
         public int ProductID { get; set; }
         public string PicturePath { get; set; }

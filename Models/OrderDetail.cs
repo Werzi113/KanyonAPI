@@ -1,8 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication1.Models
 {
     [Table("OrderDetails")]
+    [PrimaryKey(nameof(OrderID), nameof(ProductID))]
     public class OrderDetail
     {
         public int OrderID { get; set; }
