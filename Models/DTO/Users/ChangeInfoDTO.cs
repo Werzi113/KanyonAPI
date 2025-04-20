@@ -1,0 +1,38 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace WebApplication1.Models.DTO.Users
+{
+    public class ChangeInfoDTO
+    {
+        [Required()]
+        [StringLength(100)]
+        [MinLength(1)]
+        public string FirstName { get; set; }
+
+        [Required()]
+        [StringLength(100)]
+        [MinLength(1)]
+        public string LastName { get; set; }
+
+        [Required()]
+        [Phone]
+        [StringLength(16)]
+        public string? PhoneNumber { get; set; }
+
+        [StringLength(100)]
+        [MinLength(1)]
+        public string? City { get; set; }
+
+        [StringLength(100)]
+        [MinLength(1)]
+        public string? Street { get; set; }
+
+        [StringLength(100)]
+        [MinLength(1)]
+        public string? Country { get; set; }
+
+        [StringLength(6)]
+        [RegularExpression(@"^\d{3}\s?\d{2}$", ErrorMessage = "Wrong postcode format")]
+        public string? PostCode { get; set; }
+    }
+}
