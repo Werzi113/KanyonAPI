@@ -16,7 +16,7 @@ namespace WebApplication1.Controllers
     {
         private MyContext _context = new MyContext();
 
-        [HttpGet("/Admin")]
+        [HttpGet("GetUsers/Admin")]
         [SecuredRight(UserRightType.Admin_Read)]
         public IActionResult GetUsersAdmin()
         {
@@ -77,6 +77,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPut("{id}/change-info")]
+        [SecuredID]
         public IActionResult UpdateInfo(int id, ChangeInfoDTO info)
         {
             if (!ModelState.IsValid)
@@ -105,6 +106,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPut("{id}/change-info/Admin")]
+        [SecuredRight(UserRightType.Admin_Edit)]
         public IActionResult UpdateInfoAdmin(int id, ChangeInfoAdminDTO info)
         {
             if (!ModelState.IsValid)
@@ -146,6 +148,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPut("{id}/change-unique")]
+        [SecuredID]
         public IActionResult UpdateUniqueInfo(int id, ChangeUniqueInfoDTO info)
         {
             User dbUser = _context.Users.Find(id);
@@ -205,6 +208,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPut("{id}/change-password/Admin")]
+        [SecuredRight(UserRightType.Admin_Edit)]
         public IActionResult ChangePasswordAdmin(int id, PasswordOnlyDTO password)
         {
             if (!ModelState.IsValid)
@@ -226,6 +230,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpDelete("{id}/Admin")]
+        [SecuredRight(UserRightType.Admin_Edit)]
         public IActionResult DeleteUserAdmin(int id)
         {
             User user = _context.Users.Find(id);

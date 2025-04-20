@@ -6,13 +6,7 @@ namespace WebApplication1.Controllers.Attributes
 {
     public class SecuredIDAttribute : Attribute, IActionFilter
     {
-        private int _id;
         private MyContext _context = new MyContext();
-        
-        public SecuredIDAttribute(int id)
-        {
-            _id = id;
-        }
 
         public void OnActionExecuted(ActionExecutedContext context)
         {
@@ -27,14 +21,23 @@ namespace WebApplication1.Controllers.Attributes
             string header = controller.Request.Headers["Authorization"];
 
             int? id = service.GetUserIDFromToken(header);
-            
+
             if (id == null)
             {
-                context.Result = controller.Unauthorized(new { message = "Authorization failed" });
+                context.Result = controller.Unauthorized(new { message = "Can't get id from token" });
+                return;
             }
-            if (!_context.UserRights.Any(Right => Right.UserID == id))
+
+            if (context.ActionArguments.TryGetValue("id", out var actionUserID) && actionUserID is int)
             {
-                context.Result = controller.Unauthorized(new { message = "User doesn't have permission" });
+                if ((int)actionUserID != id)
+                {
+                    context.Result = controller.StatusCode(403, new { message = "User doesn't have permission" });
+                }
+            }
+            else
+            {
+                context.Result = controller.Unauthorized(new { message = "Can't get id parameter for authorization" });
             }
         }
     }

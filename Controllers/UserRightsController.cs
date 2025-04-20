@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebApplication1.Controllers.Attributes;
 using WebApplication1.Enums;
 using WebApplication1.Models;
 using WebApplication1.Models.DTO.UserRights;
@@ -16,6 +17,7 @@ namespace WebApplication1.Controllers
         private MyContext _context = new MyContext();
 
         [HttpGet("{id}")]
+        [SecuredRight(UserRightType.Admin_Read)]
         public IActionResult GetRightsByUserID(int id)
         {
             if (!_context.Users.Any(User => User.UserID == id))
@@ -27,12 +29,14 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
+        [SecuredRight(UserRightType.Admin_Read)]
         public IActionResult GetRights()
         {
             return Ok(_context.UserRights.ToArray());
         }
 
         [HttpGet("{id}:{right}")]
+        [SecuredRight(UserRightType.Admin_Read)]
         public IActionResult GetRight(int id, UserRightType right)
         {
             if (!ModelState.IsValid)
@@ -55,6 +59,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("{id}")]
+        [SecuredRight(UserRightType.Admin_Add)]
         public IActionResult AddRight(int id, RightDTO right)
         {
             if (!ModelState.IsValid)
@@ -78,6 +83,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPut("{id}:{right}")]
+        [SecuredRight(UserRightType.Admin_Edit)]
         public IActionResult EditRight(int id, UserRightType right, RightDTO newRight)
         {
             if (!ModelState.IsValid)
@@ -107,6 +113,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpDelete("{id}:{right}")]
+        [SecuredRight(UserRightType.Admin_Edit)]
         public IActionResult DeleteRight(int id, UserRightType right)
         {
             if (!_context.Users.Any(User => User.UserID == id))

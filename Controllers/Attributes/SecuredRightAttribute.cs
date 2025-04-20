@@ -31,11 +31,11 @@ namespace WebApplication1.Controllers.Attributes
             
             if (id == null)
             {
-                context.Result = controller.Unauthorized(new { message = "Authorization failed" });
+                context.Result = controller.Unauthorized(new { message = "Can't get id from token" });
             }
-            if (!_context.UserRights.Any(Right => Right.UserID == id && Right.Right == _right.ToString()))
+            else if (!_context.UserRights.Any(Right => Right.UserID == id && Right.Right == _right.ToString()))
             {
-                context.Result = controller.Unauthorized(new { message = "User doesn't have permission" });
+                context.Result = controller.StatusCode(403, new { message = "User doesn't have permission" });
             }
         }
     }

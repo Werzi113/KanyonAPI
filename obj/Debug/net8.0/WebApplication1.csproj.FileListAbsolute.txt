@@ -63,3 +63,5 @@ C:\Users\Honza\Documents\Projects\KanyonProjekt\BackEnd\obj\Debug\net8.0\WebAppl
 C:\Users\Honza\Documents\Projects\KanyonProjekt\BackEnd\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Honza\Documents\Projects\KanyonProjekt\BackEnd\obj\Debug\net8.0\ref\WebApplication1.dll
 C:\Users\Honza\Documents\Projects\KanyonProjekt\BackEnd\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Honza\Documents\Projects\KanyonProjekt\BackEnd\bin\Debug\net8.0\JWT.dll
+C:\Users\Honza\Documents\Projects\KanyonProjekt\BackEnd\bin\Debug\net8.0\Newtonsoft.Json.dll

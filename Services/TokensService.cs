@@ -1,5 +1,7 @@
 ﻿using JWT.Algorithms;
 using JWT.Builder;
+using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace WebApplication1.Services
 {
@@ -69,7 +71,9 @@ namespace WebApplication1.Services
                             .MustVerifySignature()
                             .Decode<IDictionary<string, object>>(parts[1]);
 
-                return Convert.ToInt32(payload["userID"]);
+                JsonElement id = (JsonElement)payload["userID"];
+
+                return id.GetInt32();
             }
             catch
             {
