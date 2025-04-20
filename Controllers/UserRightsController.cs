@@ -82,36 +82,6 @@ namespace WebApplication1.Controllers
             return CreatedAtAction(nameof(GetRight), new { id = userRight.UserID, right = userRight.Right }, userRight);
         }
 
-        [HttpPut("{id}:{right}")]
-        [SecuredRight(UserRightType.Admin_Edit)]
-        public IActionResult EditRight(int id, UserRightType right, RightDTO newRight)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            if (!_context.Users.Any(User => User.UserID == id))
-            {
-                return StatusCode(404, "User doesn't exist");
-            }
-            if (_context.UserRights.Any(Right => Right.UserID == id && Right.Right == newRight.Right.ToString()))
-            {
-                return StatusCode(403, "Right already exists");
-            }
-
-            UserRight dbRight = _context.UserRights.Find(id, right.ToString());
-
-            if (dbRight == null)
-            {
-                return StatusCode(404, "Right doesn't exist");
-            }
-
-            dbRight.Right = newRight.Right.ToString();
-            _context.SaveChanges();
-
-            return NoContent();
-        }
-
         [HttpDelete("{id}:{right}")]
         [SecuredRight(UserRightType.Admin_Edit)]
         public IActionResult DeleteRight(int id, UserRightType right)

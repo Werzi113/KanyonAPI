@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\attributes\\securedidattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\attributes\\securedidattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\userrightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\userrightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\attributes\\securedrightattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\attributes\\securedrightattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\attributes\\securedattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\attributes\\securedattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\enums\\userrighttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:enums\\userrighttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,54 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAIwGkAAAAJAAAA",
+              "DocumentIndex": 2,
+              "Title": "UserRightType.cs",
+              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Enums\\UserRightType.cs",
+              "RelativeDocumentMoniker": "Enums\\UserRightType.cs",
+              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Enums\\UserRightType.cs",
+              "RelativeToolTip": "Enums\\UserRightType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T16:19:39.215Z",
+              "WhenOpened": "2025-04-20T19:49:20.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SecuredRightAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\Attributes\\SecuredRightAttribute.cs",
-              "RelativeDocumentMoniker": "Controllers\\Attributes\\SecuredRightAttribute.cs",
-              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\Attributes\\SecuredRightAttribute.cs",
-              "RelativeToolTip": "Controllers\\Attributes\\SecuredRightAttribute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "UserRightsController.cs",
+              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\UserRightsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserRightsController.cs",
+              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\UserRightsController.cs",
+              "RelativeToolTip": "Controllers\\UserRightsController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T16:19:29.872Z",
+              "WhenOpened": "2025-04-20T18:18:25.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SecuredIDAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\Attributes\\SecuredIDAttribute.cs",
-              "RelativeDocumentMoniker": "Controllers\\Attributes\\SecuredIDAttribute.cs",
-              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\Attributes\\SecuredIDAttribute.cs",
-              "RelativeToolTip": "Controllers\\Attributes\\SecuredIDAttribute.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBgAAAAbAAAA",
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\WishlistController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WishlistController.cs",
+              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\WishlistController.cs",
+              "RelativeToolTip": "Controllers\\WishlistController.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAuwJoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T16:19:24.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SecuredAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\Attributes\\SecuredAttribute.cs",
-              "RelativeDocumentMoniker": "Controllers\\Attributes\\SecuredAttribute.cs",
-              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\Attributes\\SecuredAttribute.cs",
-              "RelativeToolTip": "Controllers\\Attributes\\SecuredAttribute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T16:19:22.908Z",
+              "WhenOpened": "2025-04-20T16:34:08.226Z",
               "EditorCaption": ""
             }
           ]
