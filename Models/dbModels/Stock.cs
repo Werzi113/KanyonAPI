@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApplication1.Models
+namespace WebApplication1.Models.dbModels
 {
     [Table("Stocks")]
     public class Stock
@@ -10,7 +10,7 @@ namespace WebApplication1.Models
         public int StockID { get; set; }
         public int Amount { get; set; }
         public int ProductID { get; set; }
-        public DateTime Date {  get; set; }
+        public DateTime Date { get; set; }
         public int WarehouseID { get; set; }
     }
 }

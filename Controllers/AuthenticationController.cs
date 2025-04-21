@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
+using WebApplication1.Models.dbModels;
 using WebApplication1.Models.DTO.Login;
 using WebApplication1.Services;
 

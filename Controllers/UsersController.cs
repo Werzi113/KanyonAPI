@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Controllers.Attributes;
-using WebApplication1.Models;
 using WebApplication1.Models.DTO.Users;
 using WebApplication1.Enums;
+using WebApplication1.Models.dbModels;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

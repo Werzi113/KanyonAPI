@@ -2,23 +2,23 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using WebApplication1.Models.DTO.Users;
 
-namespace WebApplication1.Models
+namespace WebApplication1.Models.dbModels
 {
     [Table("Users")]
     public class User
     {
         [Key]
         public int UserID { get; set; }
-        public string Username {  get; set; }
+        public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
-        public DateTime CreatedAt {  get; set; }
-        public string FirstName {  get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string? PhoneNumber {  get; set; }
+        public string? PhoneNumber { get; set; }
         public string? City { get; set; }
         public string? Street { get; set; }
         public string? Country { get; set; }
-        public string? PostCode {  get; set; }
+        public string? PostCode { get; set; }
     }
 }

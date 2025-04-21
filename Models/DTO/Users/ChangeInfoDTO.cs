@@ -14,7 +14,6 @@ namespace WebApplication1.Models.DTO.Users
         [MinLength(1)]
         public string LastName { get; set; }
 
-        [Required()]
         [Phone]
         [StringLength(16)]
         public string? PhoneNumber { get; set; }

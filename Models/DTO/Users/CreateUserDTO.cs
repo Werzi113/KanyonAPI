@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using WebApplication1.Models.dbModels;
 
 namespace WebApplication1.Models.DTO.Users
 {

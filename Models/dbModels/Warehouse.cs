@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApplication1.Models
+namespace WebApplication1.Models.dbModels
 {
     [Table("Warehouses")]
     public class Warehouse
@@ -11,7 +11,7 @@ namespace WebApplication1.Models
         public string City { get; set; }
         public string Country { get; set; }
         public string PostCode { get; set; }
-        public string Street { get; set; } 
+        public string Street { get; set; }
 
     }
 }
