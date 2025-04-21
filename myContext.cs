@@ -6,8 +6,6 @@ namespace WebApplication1
     public class MyContext : DbContext
     {
         public DbSet<Category> Categories { get; set; }
-        public DbSet<CategoryParameter> CategoryParameters { get; set; }
-        public DbSet<CategoryParameterValue> CategoryParametersValues { get; set; }
         public DbSet<DiscountCode> DiscountCodes { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Order> Orders { get; set; }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lgeu/ZwhgfY=",
+  "dgSpecHash": "YokDN7LaXPs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Honza\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Honza\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
