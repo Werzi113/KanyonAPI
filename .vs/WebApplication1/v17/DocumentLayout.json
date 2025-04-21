@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\stockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\stockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\discountcodescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\discountcodescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\controllers\\warehousescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\warehousescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\models\\dto\\stocks\\createstockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\dto\\stocks\\createstockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\models\\dto\\discountcodes\\codedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\dto\\discountcodes\\codedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,41 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateStockDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Models\\DTO\\Stocks\\CreateStockDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\Stocks\\CreateStockDTO.cs",
-              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Models\\DTO\\Stocks\\CreateStockDTO.cs",
-              "RelativeToolTip": "Models\\DTO\\Stocks\\CreateStockDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "CodeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Models\\DTO\\DiscountCodes\\CodeDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\DiscountCodes\\CodeDTO.cs",
+              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Models\\DTO\\DiscountCodes\\CodeDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\DiscountCodes\\CodeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:52:24.609Z",
+              "WhenOpened": "2025-04-21T16:34:40.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StocksController.cs",
-              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\StocksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StocksController.cs",
-              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\StocksController.cs",
-              "RelativeToolTip": "Controllers\\StocksController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAIwFEAAAAJAAAA",
+              "Title": "DiscountCodesController.cs",
+              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\DiscountCodesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DiscountCodesController.cs",
+              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\DiscountCodesController.cs",
+              "RelativeToolTip": "Controllers\\DiscountCodesController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAowCEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:39:11.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WarehousesController.cs",
-              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\WarehousesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WarehousesController.cs",
-              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\Controllers\\WarehousesController.cs",
-              "RelativeToolTip": "Controllers\\WarehousesController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:39:12.961Z",
+              "WhenOpened": "2025-04-21T15:18:42.195Z",
               "EditorCaption": ""
             }
           ]
