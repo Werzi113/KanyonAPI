@@ -5,7 +5,7 @@ namespace WebApplication1.Services
 {
     public class ProductsService
     {
-        public const int DEFAULT_RATING = 3;
+        
 
         private MyContext context = new MyContext();
         private RatingsService ratingsService = new RatingsService();
@@ -23,20 +23,14 @@ namespace WebApplication1.Services
 
         public IQueryable<ProductPreviewDTO> FindProductPreviews()
         {
-            var query = 
-                from p in this.context.Products
-                join r in this.context.Ratings on p.ProductID equals r.ProductID into rg
-                from r in rg.DefaultIfEmpty()
-                group r by new { p.ProductID, p.Name, p.Price, p.Discount } into g
-                select new ProductPreviewDTO
-                {
-                    ID = g.Key.ProductID,
-                    Name = g.Key.Name,
-                    Price = g.Key.Price,
-                    Rating = g.Any() ? (int?)g.Average(r => r.Score) ?? 3 : 3,
-                    Discount = g.Key.Discount
-
-                };
+            var query = this.context.Products.Select(x => new ProductPreviewDTO
+            {
+                ID = x.ProductID,
+                Name = x.Name,
+                Discount = x.Discount,
+                Price = x.Price,
+                Rating = ratingsService.GetProductRating(x.ProductID)
+            });
             return query;       
         }
         public bool IsProductValid(Product p)

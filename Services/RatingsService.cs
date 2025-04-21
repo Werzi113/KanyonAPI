@@ -3,6 +3,7 @@
     public class RatingsService
     {
         private MyContext _context = new MyContext();
+        public const int DEFAULT_RATING = 3;
         public int GetProductRating(int productId)
         {
             try
@@ -11,7 +12,7 @@
             }
             catch
             {
-                return 0;
+                return DEFAULT_RATING;
             }
         }
 

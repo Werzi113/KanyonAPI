@@ -132,3 +132,5 @@ C:\Users\sasas\OneDrive\Plocha\kanyonAPI\KanyonAPI\obj\Debug\net8.0\refint\WebAp
 C:\Users\sasas\OneDrive\Plocha\kanyonAPI\KanyonAPI\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\sasas\OneDrive\Plocha\kanyonAPI\KanyonAPI\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\sasas\OneDrive\Plocha\kanyonAPI\KanyonAPI\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\sasas\OneDrive\Plocha\kanyonAPI\KanyonAPI\bin\Debug\net8.0\WebApplication1.staticwebassets.runtime.json
+C:\Users\sasas\OneDrive\Plocha\kanyonAPI\KanyonAPI\bin\Debug\net8.0\Stripe.net.dll

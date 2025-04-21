@@ -27,6 +27,7 @@ namespace WebApplication1
 
             app.UseAuthorization();
 
+            app.UseStaticFiles();
 
             app.MapControllers();
 

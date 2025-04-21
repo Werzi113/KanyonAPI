@@ -1,17 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Security.Permissions;
-
-namespace WebApplication1.Models.dbModels
+﻿namespace WebApplication1.Models.DTO.Transactions
 {
-    [Table("Transactions")]
-    public class Transaction
+    public class TransactionDTO
     {
-        [Key]
-        public int TransactionID { get; set; }
         public string PaymentMethod { get; set; }
-        public bool Status { get; set; }
-        public string? TransactionGatewayID { get; set; }
         public int OrderID { get; set; }
         public string City { get; set; }
         public string Country { get; set; }

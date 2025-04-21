@@ -11,6 +11,8 @@ namespace WebApplication1.Models.dbModels
         public int ProductID { get; set; }
         public string PicturePath { get; set; }
         public string? Description { get; set; }
+        public bool IsPreview { get; set; }
+
 
     }
 }
