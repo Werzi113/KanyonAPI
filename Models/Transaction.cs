@@ -11,7 +11,7 @@ namespace WebApplication1.Models
         public int TransactionID { get; set; }
         public string PaymentMethod { get; set; }
         public bool Status { get; set; }
-        public string? TransactionGateway {  get; set; }
+        public string? TransactionGatewayID {  get; set; }
         public int OrderID { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
