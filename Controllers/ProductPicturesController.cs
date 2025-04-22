@@ -6,6 +6,7 @@ using WebApplication1.Models.DTO.Products;
 using System.IO;
 using WebApplication1.Services;
 
+
 namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
@@ -74,17 +75,23 @@ namespace WebApplication1.Controllers
 
         public IActionResult UploadImage(ProductPictureUploadDTO pic)
         {
-            if (pic.File == null || pic.File.Length == 0)
-            {
-                return BadRequest("No file uploaded");
-            }
-
-            this.service.SavePictureFile(pic);
 
             var fileName = Path.GetFileName(pic.File.FileName);
-
-
             var relativePath = $"/images/products/{pic.ProductId}/{fileName}";
+
+            var validation = this.service.CanBeUploaded(pic, relativePath);
+
+            if (!validation.Succeeded)
+            {
+                return BadRequest(validation.Message);
+            }
+
+
+            if (!this.service.SavePictureFile(pic))
+            {
+                return BadRequest("File isn't allowed");
+            }
+
             ProductPicture picture = new ProductPicture
             {
                 ProductID = pic.ProductId,

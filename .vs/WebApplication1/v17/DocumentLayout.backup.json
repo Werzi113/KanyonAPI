@@ -1,34 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\kvapilmatous\\desktop\\kanyonapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\services\\productpicturesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:services\\productpicturesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\models\\validationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\validationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\controllers\\productpicturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\productpicturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\kvapilmatous\\desktop\\kanyonapi\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\models\\dbmodels\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\dbmodels\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\kvapilmatous\\desktop\\kanyonapi\\services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\kvapilmatous\\desktop\\kanyonapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\kvapilmatous\\desktop\\kanyonapi\\models\\productpicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\productpicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\models\\dbmodels\\productpicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\dbmodels\\productpicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\kvapilmatous\\desktop\\kanyonapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\merged\\kanyonapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\kvapilmatous\\desktop\\kanyonapi\\controllers\\productpicturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\productpicturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,93 +55,114 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Models\\Transaction.cs",
-              "RelativeDocumentMoniker": "Models\\Transaction.cs",
-              "ToolTip": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Models\\Transaction.cs",
-              "RelativeToolTip": "Models\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Title": "ValidationResult.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Models\\ValidationResult.cs",
+              "RelativeDocumentMoniker": "Models\\ValidationResult.cs",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Models\\ValidationResult.cs",
+              "RelativeToolTip": "Models\\ValidationResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T06:37:48.827Z",
+              "WhenOpened": "2025-04-22T17:36:43.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductPicturesService.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Services\\ProductPicturesService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductPicturesService.cs",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Services\\ProductPicturesService.cs",
+              "RelativeToolTip": "Services\\ProductPicturesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T17:36:16.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Models\\dbModels\\Transaction.cs",
+              "RelativeDocumentMoniker": "Models\\dbModels\\Transaction.cs",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Models\\dbModels\\Transaction.cs",
+              "RelativeToolTip": "Models\\dbModels\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T06:37:48.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TransactionsController.cs",
-              "DocumentMoniker": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Controllers\\TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Controllers\\TransactionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\TransactionsController.cs",
-              "ToolTip": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Controllers\\TransactionsController.cs*",
-              "RelativeToolTip": "Controllers\\TransactionsController.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAArwDIAAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T06:37:23.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ProductsService.cs",
-              "DocumentMoniker": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Services\\ProductsService.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Services\\ProductsService.cs",
               "RelativeDocumentMoniker": "Services\\ProductsService.cs",
-              "ToolTip": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Services\\ProductsService.cs*",
-              "RelativeToolTip": "Services\\ProductsService.cs*",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Services\\ProductsService.cs",
+              "RelativeToolTip": "Services\\ProductsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T06:37:16.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T06:37:16.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ProductPicture.cs",
-              "DocumentMoniker": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Models\\ProductPicture.cs",
-              "RelativeDocumentMoniker": "Models\\ProductPicture.cs",
-              "ToolTip": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Models\\ProductPicture.cs",
-              "RelativeToolTip": "Models\\ProductPicture.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Models\\dbModels\\ProductPicture.cs",
+              "RelativeDocumentMoniker": "Models\\dbModels\\ProductPicture.cs",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Models\\dbModels\\ProductPicture.cs",
+              "RelativeToolTip": "Models\\dbModels\\ProductPicture.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T06:36:00.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAArwGAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T06:34:46.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T06:36:00.749Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAArwGAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T06:34:46.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ProductPicturesController.cs",
-              "DocumentMoniker": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Controllers\\ProductPicturesController.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Controllers\\ProductPicturesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductPicturesController.cs",
-              "ToolTip": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Controllers\\ProductPicturesController.cs",
-              "RelativeToolTip": "Controllers\\ProductPicturesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Controllers\\ProductPicturesController.cs*",
+              "RelativeToolTip": "Controllers\\ProductPicturesController.cs*",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T06:34:30.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Controllers\\OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\kvapilmatous\\Desktop\\KanyonAPI\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\merged\\KanyonAPI\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Controllers\\OrdersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T06:34:29.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T06:34:29.692Z"
             }
           ]
         }
