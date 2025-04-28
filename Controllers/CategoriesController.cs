@@ -35,6 +35,7 @@ namespace WebApplication1.Controllers
             return Ok(category);
         }
 
+        //Gets DIRECT children of category if id == null returns categories without a parent
         [HttpGet("Parent")]
         public IActionResult GetCategoriesByParent([FromQuery]int? id)
         {
@@ -44,6 +45,52 @@ namespace WebApplication1.Controllers
             }
 
             return Ok(_context.Categories.Where(Category => Category.ParentID == id).ToArray());
+        }
+
+        //Gets ALL children of a category
+        [HttpGet("All/{id}")]
+        public IActionResult GetAllChildrenByID(int id)
+        {
+            if (_context.Categories.Find(id) == null)
+            {
+                return NotFound("Category doesn't exist");
+            }
+
+            var res = _context.Categories.FromSqlInterpolated($@"
+                WITH recursive Nodes as (
+	            select * from Categories where CategoryID = {id}
+                UNION all
+                select cat.* from Categories as cat 
+                INNER JOIN
+	            Nodes as n
+                WHERE cat.parentID = n.CategoryID
+                )
+                select * from Nodes").ToArray();
+
+            return Ok(res);
+        }
+
+        //Gets the path leading to a category the category is the final element of the returned array
+        [HttpGet("Path/{id}")]
+        public IActionResult GetPath(int id)
+        {
+            if (_context.Categories.Find(id) == null)
+            {
+                return NotFound("Category doesn't exist");
+            }
+
+            var res = _context.Categories.FromSqlInterpolated($@"
+                WITH recursive Nodes as (
+	            select *, 0 as position from Categories where CategoryID = {id}
+                UNION all
+                select cat.*, n.position + 1 as position from Categories as cat 
+                INNER JOIN
+	            Nodes as n
+                WHERE cat.CategoryID = n.ParentID
+                )
+                select * from Nodes ORDER BY position desc").ToArray();
+
+            return Ok(res);
         }
 
         [HttpPost]

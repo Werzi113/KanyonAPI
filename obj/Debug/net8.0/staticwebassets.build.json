@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SMXgURqZPdpHxgeqtQlzFCHaAMQg6iVHVMYnCXr9bas=",
+  "Hash": "xnJ72cqXyzJNxMYhuTDu6Y2hIfddVtS200p7Gs2EZZw=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -10,219 +10,49 @@
     {
       "Name": "WebApplication1\\wwwroot",
       "Source": "WebApplication1",
-      "ContentRoot": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
+      "Identity": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
-      "RelativePath": "images/products/1/epic#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/1/epic.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a08j17napc",
-      "Integrity": "SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\1\\epic.png"
     },
     {
-      "Identity": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
+      "Identity": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
-      "RelativePath": "images/products/4/Bl4de_esports#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/products/4/Bl4de_esports.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qzack5jv0m",
-      "Integrity": "pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\4\\Bl4de_esports.jpg"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "images/products/1/epic.a08j17napc.png",
-      "AssetFile": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3807"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 12:51:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "a08j17napc"
-        },
-        {
-          "Name": "label",
-          "Value": "images/products/1/epic.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I="
-        }
-      ]
-    },
-    {
-      "Route": "images/products/1/epic.png",
-      "AssetFile": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3807"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 12:51:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I="
-        }
-      ]
-    },
-    {
-      "Route": "images/products/4/Bl4de_esports.jpg",
-      "AssetFile": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "43688"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 12:45:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78="
-        }
-      ]
-    },
-    {
-      "Route": "images/products/4/Bl4de_esports.qzack5jv0m.jpg",
-      "AssetFile": "C:\\Users\\StepanovOleksandr\\Desktop\\api\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "43688"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 12:45:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qzack5jv0m"
-        },
-        {
-          "Name": "label",
-          "Value": "images/products/4/Bl4de_esports.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78="
-        }
-      ]
     }
   ]
 }

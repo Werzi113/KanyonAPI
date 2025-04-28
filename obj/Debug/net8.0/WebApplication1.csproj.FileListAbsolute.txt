@@ -345,3 +345,5 @@ C:\Users\StepanovOleksandr\Desktop\api\KanyonAPI\obj\Debug\net8.0\refint\WebAppl
 C:\Users\StepanovOleksandr\Desktop\api\KanyonAPI\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\StepanovOleksandr\Desktop\api\KanyonAPI\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\StepanovOleksandr\Desktop\api\KanyonAPI\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\Honza\Documents\Projects\KanyonProjekt\BackEnd\KanyonAPI\bin\Debug\net8.0\WebApplication1.staticwebassets.runtime.json
+C:\Users\Honza\Documents\Projects\KanyonProjekt\BackEnd\KanyonAPI\bin\Debug\net8.0\Stripe.net.dll
