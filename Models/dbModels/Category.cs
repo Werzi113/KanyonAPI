@@ -11,5 +11,9 @@ namespace WebApplication1.Models
         public string Name { get; set; }
         public string? Description { get; set; }
         public int? ParentID { get; set; }
+        [Column("Lft")]
+        public int Left {  get; set; }
+        [Column("Rgt")]
+        public int Right { get; set; }
     }
 }

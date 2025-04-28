@@ -10,6 +10,6 @@ namespace WebApplication1.Models.DTO.Categories
         [StringLength(65535)]
         public string? Description { get; set; }
 
-        public int? ParentID { get; set; }
+        //public int? ParentID { get; set; }
     }
 }

@@ -214,6 +214,29 @@
         }
       }
     },
+    "/api/Categories/Path/{id}": {
+      "get": {
+        "tags": [
+          "Categories"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/DiscountCodes/{id}": {
       "get": {
         "tags": [
@@ -2934,11 +2957,6 @@
             "maxLength": 65535,
             "minLength": 0,
             "type": "string",
-            "nullable": true
-          },
-          "parentID": {
-            "type": "integer",
-            "format": "int32",
             "nullable": true
           }
         },

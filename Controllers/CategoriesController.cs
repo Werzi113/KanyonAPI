@@ -46,8 +46,21 @@ namespace WebApplication1.Controllers
             return Ok(_context.Categories.Where(Category => Category.ParentID == id).ToArray());
         }
 
+        [HttpGet("Path/{id}")]
+        public IActionResult GetCategoryPath(int id)
+        {
+            Category dbCategory = _context.Categories.Find(id);
+
+            if (dbCategory == null)
+            {
+                return NotFound("Category doesn't exist");
+            }
+
+            return Ok(_context.Categories.Where(Category => Category.Left < dbCategory.Left && Category.Right > dbCategory.Right).OrderBy(Category => Category.Left));
+        }
+
         [HttpPost]
-        [SecuredRight(UserRightType.Admin_Add)]
+        //[SecuredRight(UserRightType.Admin_Add)]
         public IActionResult AddCategory(CreateCategoryDTO categoryDTO)
         {
             if (!ModelState.IsValid)
@@ -60,6 +73,27 @@ namespace WebApplication1.Controllers
             }
 
             Category dbCategory = categoryDTO.CreateCategory();
+
+            if (dbCategory.ParentID == null)
+            {
+                dbCategory.Left = _context.Categories.Max(Category => Category.Right) + 1;
+            }
+            else
+            {
+                Category parent = _context.Categories.Find(dbCategory.ParentID);
+                dbCategory.Left = parent.Left + 1;
+            }
+            dbCategory.Right = dbCategory.Left + 1;
+
+            foreach (var item in _context.Categories.Where(Category => Category.Right >= dbCategory.Left))
+            {
+                item.Right += 2;
+            }
+
+            foreach (var item in _context.Categories.Where(Category => Category.Left >= dbCategory.Left))
+            {
+                item.Left += 2;
+            }
 
             _context.Categories.Add(dbCategory);
             _context.SaveChanges();
@@ -75,14 +109,14 @@ namespace WebApplication1.Controllers
             {
                 return BadRequest(ModelState); 
             }
-            if (!_context.Categories.Any(Category => Category.CategoryID == categoryDTO.ParentID) && categoryDTO.ParentID != null)
-            {
-                return NotFound("Parent doesn't exist");
-            }
-            if (id == categoryDTO.ParentID)
-            {
-                return StatusCode(403, "Category can't be a parent of itself");
-            }
+            //if (!_context.Categories.Any(Category => Category.CategoryID == categoryDTO.ParentID) && categoryDTO.ParentID != null)
+            //{
+            //    return NotFound("Parent doesn't exist");
+            //}
+            //if (id == categoryDTO.ParentID)
+            //{
+            //    return StatusCode(403, "Category can't be a parent of itself");
+            //}
 
             Category dbCategory = _context.Categories.Find(id);
 
@@ -91,7 +125,7 @@ namespace WebApplication1.Controllers
                 return NotFound("Category doesn't exist");
             }
 
-            dbCategory.ParentID = categoryDTO.ParentID;
+            //dbCategory.ParentID = categoryDTO.ParentID;
             dbCategory.Name = categoryDTO.Name;
             dbCategory.Description = categoryDTO.Description;
 
@@ -101,7 +135,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpDelete("{id}")]
-        [SecuredRight(UserRightType.Admin_Edit)]
+        //[SecuredRight(UserRightType.Admin_Edit)]
         public IActionResult DeleteCategory(int id)
         {
             Category dbCategory = _context.Categories.Find(id);
@@ -115,7 +149,20 @@ namespace WebApplication1.Controllers
                 return StatusCode(403, "Category has products in it");
             }
 
+            int width = dbCategory.Right - dbCategory.Left + 1;
+
             _context.Categories.Remove(dbCategory);
+            _context.SaveChanges();
+
+            foreach (var item in _context.Categories.Where(Category => Category.Left > dbCategory.Left))
+            {
+                item.Left -= width;
+            }
+            foreach (var item in _context.Categories.Where(Category => Category.Right > dbCategory.Right))
+            {
+                item.Right -= width;
+            }
+
             _context.SaveChanges();
 
             return NoContent();

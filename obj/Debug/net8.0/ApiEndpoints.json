@@ -127,6 +127,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApplication1.Controllers.CategoriesController",
+    "Method": "GetCategoryPath",
+    "RelativePath": "api/Categories/Path/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApplication1.Controllers.DiscountCodesController",
     "Method": "AddCode",
     "RelativePath": "api/DiscountCodes",
