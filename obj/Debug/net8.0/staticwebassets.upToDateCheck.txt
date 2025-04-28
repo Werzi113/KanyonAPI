@@ -1,0 +1,2 @@
+wwwroot\images\products\1\epic.png
+wwwroot\images\products\4\Bl4de_esports.jpg
