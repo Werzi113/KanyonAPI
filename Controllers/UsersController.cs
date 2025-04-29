@@ -5,6 +5,7 @@ using WebApplication1.Controllers.Attributes;
 using WebApplication1.Models;
 using WebApplication1.Models.DTO.Users;
 using WebApplication1.Enums;
+using WebApplication1.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -84,6 +85,14 @@ namespace WebApplication1.Controllers
             {
                 return BadRequest(ModelState);
             }
+            if (_context.Users.Any(User => User.Username == info.Username && User.UserID != id))
+            {
+                return StatusCode(403, "Username is already in use");
+            }
+            if (_context.Users.Any(User => User.Email == info.Email && User.UserID != id))
+            {
+                return StatusCode(403, "Email already has an asociated account");
+            }
 
             User user = _context.Users.Find(id);
 
@@ -92,6 +101,8 @@ namespace WebApplication1.Controllers
                 return NotFound();
             }
 
+            user.Username = info.Username;
+            user.Email = info.Email;
             user.Street = info.Street;
             user.City = info.City;
             user.Country = info.Country;
@@ -142,40 +153,6 @@ namespace WebApplication1.Controllers
             user.Country = info.Country;
             user.PostCode = info.PostCode;
 
-            _context.SaveChanges();
-
-            return NoContent();
-        }
-
-        [HttpPut("{id}/change-unique")]
-        [SecuredID]
-        public IActionResult UpdateUniqueInfo(int id, ChangeUniqueInfoDTO info)
-        {
-            User dbUser = _context.Users.Find(id);
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            if (dbUser == null)
-            {
-                return NotFound();
-            }
-            if (_context.Users.Any(User => User.Username == info.Username && User.UserID != id))
-            {
-                return StatusCode(403, "Username is already in use");
-            }
-            if (_context.Users.Any(User => User.Email == info.Email && User.UserID != id))
-            {
-                return StatusCode(403, "Email already has an asociated account");
-            }
-            if (!BCrypt.Net.BCrypt.EnhancedVerify(info.Password, dbUser.Password))
-            {
-                return StatusCode(403, "Wrong password");
-            }
-
-            dbUser.Email = info.Email;
-            dbUser.Username = info.Username;
             _context.SaveChanges();
 
             return NoContent();

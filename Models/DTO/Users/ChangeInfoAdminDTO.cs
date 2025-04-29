@@ -19,15 +19,11 @@ namespace WebApplication1.Models.DTO.Users
         [MinLength(60)]
         public string Password { get; set; }
 
-        [Required()]
         [StringLength(100)]
-        [MinLength(1)]
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
-        [Required()]
         [StringLength(100)]
-        [MinLength(1)]
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
 
         [Required()]
         public DateTime CreatedAt { get; set; }

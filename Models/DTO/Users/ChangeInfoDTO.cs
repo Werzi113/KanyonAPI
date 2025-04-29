@@ -6,13 +6,19 @@ namespace WebApplication1.Models.DTO.Users
     {
         [Required()]
         [StringLength(100)]
-        [MinLength(1)]
-        public string FirstName { get; set; }
+        [EmailAddress]
+        public string Email { get; set; }
 
         [Required()]
         [StringLength(100)]
-        [MinLength(1)]
-        public string LastName { get; set; }
+        [MinLength(5)]
+        public string Username { get; set; }
+
+        [StringLength(100)]
+        public string? FirstName { get; set; }
+
+        [StringLength(100)]
+        public string? LastName { get; set; }
 
         [Phone]
         [StringLength(16)]
