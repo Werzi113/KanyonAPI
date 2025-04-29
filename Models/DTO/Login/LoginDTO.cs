@@ -3,7 +3,7 @@ using WebApplication1.Enums;
 
 namespace WebApplication1.Models.DTO.Login
 {
-    public class EmailLoginDTO
+    public class LoginDTO
     {
         [Required()]
         [MinLength(5)]
@@ -12,7 +12,6 @@ namespace WebApplication1.Models.DTO.Login
 
         [Required()]
         [StringLength(100)]
-        [EmailAddress]
-        public string Email { get; set; }
+        public string Username { get; set; }
     }
 }

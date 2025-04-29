@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\kanyonapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\backend\\kanyonapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,15 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T18:26:23.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
               "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAuwF4AAAAAAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAuwFgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T16:09:39.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T16:09:39.133Z"
             }
           ]
         }
