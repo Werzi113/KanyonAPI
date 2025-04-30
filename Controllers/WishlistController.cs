@@ -2,6 +2,7 @@
 using WebApplication1.Controllers.Attributes;
 using WebApplication1.Models;
 using WebApplication1.Enums;
+using WebApplication1.Models.DTO.Wishlist;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,6 +13,51 @@ namespace WebApplication1.Controllers
     public class WishlistController : ControllerBase
     {
         private MyContext _context = new MyContext();
+
+        [HttpGet("User/{id}/Previews")]
+        [SecuredID]
+        public IActionResult GetWishlistProductPreviews(int id)
+        {
+            if (!_context.Users.Any(User => User.UserID == id))
+            {
+                return NotFound("User doesn't exist");
+            }
+
+            List<WishlistProductDTO> products = new List<WishlistProductDTO>();
+
+            foreach (var item in _context.WishlistedProducts.Where(product => product.UserID == id).ToArray())
+            {
+                Product product = _context.Products.Find(item.ProductID);
+
+                if (product == null)
+                {
+                    continue;
+                }
+
+                WishlistProductDTO productDTO = new WishlistProductDTO() {
+                    Discount = product.Discount,
+                    ProductID = product.ProductID,
+                    Price = product.Price,
+                    Name = product.Name,
+                };
+
+                var img = _context.ProductPictures.FirstOrDefault(pic => pic.IsPreview == true && pic.ProductID == product.ProductID);
+
+                if (img == null)
+                {
+                    productDTO.ImageURL = "";
+                }
+                else
+                {
+                    string baseUrl = $"{Request.Scheme}://{Request.Host}";
+                    productDTO.ImageURL = $"{baseUrl}{img.PicturePath}";
+                }
+
+                products.Add(productDTO);
+            }
+
+            return Ok(products.ToArray());
+        }
 
         [HttpGet("User/{id}")]
         [SecuredID]

@@ -19,7 +19,7 @@ namespace WebApplication1.Controllers
         [HttpGet("{productID}/Preview")]
         public IActionResult GetPreviewPicturePath(int productID)
         {
-            var previewPicture = context.ProductPictures.First(p => p.IsPreview);
+            var previewPicture = context.ProductPictures.FirstOrDefault(p => p.IsPreview && p.ProductID == productID);
 
             if (previewPicture == null)
             {
