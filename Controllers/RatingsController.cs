@@ -33,10 +33,32 @@ namespace WebApplication1.Controllers
 
             if (rating == null)
             {
-                return NotFound("Rating doesn't exist");
+                return NotFound("Rating does not exist");
             }
 
             return Ok(rating);
+        }
+
+        [HttpGet("Exists/{UserID}:{ProductID}")]
+        public IActionResult CheckIfRatingExists(int UserID, int ProductID)
+        {
+            if (!_context.Users.Any(User => User.UserID == UserID))
+            {
+                return NotFound("User doesn't exist");
+            }
+            if (!_context.Products.Any(Product => Product.ProductID == ProductID))
+            {
+                return NotFound("Product doesn't exist");
+            }
+
+            Rating rating = _context.Ratings.Find(UserID, ProductID);
+
+            if (rating == null)
+            {
+                return Ok(false);
+            }
+
+            return Ok(true);
         }
 
         [HttpGet]
