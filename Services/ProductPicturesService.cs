@@ -15,6 +15,12 @@ namespace WebApplication1.Services
             ".png",
             ".jfif"
         };
+        public string? GetProductPreviewPicturePath(int productID, string baseURL)
+        {
+            var previewPicture = context.ProductPictures.FirstOrDefault(p => p.IsPreview && p.ProductID == productID);
+
+            return previewPicture == null ? null : $"{baseURL}{previewPicture.PicturePath}";
+        }
         public bool SavePictureFile(ProductPictureUploadDTO pic)
         {
             var extension = Path.GetExtension(pic.File.FileName);

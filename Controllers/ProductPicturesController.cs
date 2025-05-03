@@ -19,24 +19,22 @@ namespace WebApplication1.Controllers
         [HttpGet("{productID}/Preview")]
         public IActionResult GetPreviewPicturePath(int productID)
         {
-            var previewPicture = context.ProductPictures.FirstOrDefault(p => p.IsPreview && p.ProductID == productID);
+            string baseUrl = $"{Request.Scheme}://{Request.Host}";
+            var picURL = service.GetProductPreviewPicturePath(productID, baseUrl);
 
-            if (previewPicture == null)
+            if (picURL == null)
             {
                 return NotFound(new { message = "Product preview picture not found" });
             }
 
-            string baseUrl = $"{Request.Scheme}://{Request.Host}";
-            string imgUrl = $"{baseUrl}{previewPicture.PicturePath}";
-
-            return Ok(imgUrl);
+            return Ok(picURL);
 
 
         }
         [HttpGet("{productID}")]
         public IActionResult GetProductPictures(int productID)
         {
-            List<string> urls = new List<string>();
+            List<string> result = new List<string>();
             var pictures = context.ProductPictures.Where(picture => picture.ProductID == productID).ToList();
 
             if (pictures.Count == 0)
@@ -48,10 +46,10 @@ namespace WebApplication1.Controllers
 
             foreach (var item in pictures)
             {
-                urls.Add($"{baseUrl}{item.PicturePath}");
+                result.Add($"{baseUrl}{item.PicturePath}");
             }
 
-            return Ok(urls);
+            return Ok(result);
         }
 
         [HttpDelete("Delete:{pictureID}")]

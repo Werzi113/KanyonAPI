@@ -1,31 +1,15 @@
 [
   {
     "ContainingType": "WebApplication1.Controllers.AuthenticationController",
-    "Method": "LoginByEmail",
-    "RelativePath": "api/Authentication/Email",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "login",
-        "Type": "WebApplication1.Models.DTO.Login.EmailLoginDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApplication1.Controllers.AuthenticationController",
     "Method": "LoginByUsername",
-    "RelativePath": "api/Authentication/Username",
+    "RelativePath": "api/Authentication",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "login",
-        "Type": "WebApplication1.Models.DTO.Login.UsernameLoginDTO",
+        "Type": "WebApplication1.Models.DTO.Login.LoginDTO",
         "IsRequired": true
       }
     ],
@@ -112,6 +96,22 @@
   },
   {
     "ContainingType": "WebApplication1.Controllers.CategoriesController",
+    "Method": "GetAllChildrenByID",
+    "RelativePath": "api/Categories/All/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.CategoriesController",
     "Method": "GetCategoriesByParent",
     "RelativePath": "api/Categories/Parent",
     "HttpMethod": "GET",
@@ -122,6 +122,22 @@
         "Name": "id",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.CategoriesController",
+    "Method": "GetPath",
+    "RelativePath": "api/Categories/Path/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -242,6 +258,38 @@
       {
         "Name": "order",
         "Type": "WebApplication1.Models.DTO.Orders.OrderCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.OrdersController",
+    "Method": "GetOrderProductsPreviews",
+    "RelativePath": "api/Orders/Products/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.OrdersController",
+    "Method": "GetOrderPreviewsByUser",
+    "RelativePath": "api/Orders/User/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -640,6 +688,27 @@
       {
         "Name": "ratingDTO",
         "Type": "WebApplication1.Models.DTO.Ratings.CreateRatingAdminDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.RatingsController",
+    "Method": "CheckIfRatingExists",
+    "RelativePath": "api/Ratings/Exists/{UserID}:{ProductID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ProductID",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1128,27 +1197,6 @@
   },
   {
     "ContainingType": "WebApplication1.Controllers.UsersController",
-    "Method": "UpdateUniqueInfo",
-    "RelativePath": "api/Users/{id}/change-unique",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "info",
-        "Type": "WebApplication1.Models.DTO.Users.ChangeUniqueInfoDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApplication1.Controllers.UsersController",
     "Method": "GetUsersAdmin",
     "RelativePath": "api/Users/GetUsers/Admin",
     "HttpMethod": "GET",
@@ -1499,6 +1547,22 @@
     "ContainingType": "WebApplication1.Controllers.WishlistController",
     "Method": "GetWishlistByUserIDAdmin",
     "RelativePath": "api/Wishlist/User/{id}/Admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.WishlistController",
+    "Method": "GetWishlistProductPreviews",
+    "RelativePath": "api/Wishlist/User/{id}/Previews",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

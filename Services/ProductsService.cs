@@ -9,28 +9,53 @@ namespace WebApplication1.Services
 
         private MyContext context = new MyContext();
         private RatingsService ratingsService = new RatingsService();
-        public ProductPreviewDTO GetProductPreviewData(Product product)
-        {
-            return new ProductPreviewDTO() 
-            {
-                ID = product.ProductID,
-                Name = product.Name,
-                Discount = product.Discount,
-                Price = product.Price,
-                Rating = ratingsService.GetProductRating(product.ProductID)
-            };
-        }
+        private ProductPicturesService pictureService = new ProductPicturesService();
+        //public ProductPreviewDTO GetProductPreview(Product product)
+        //{
+        //    return new ProductPreviewDTO() 
+        //    {
+        //        ID = product.ProductID,
+        //        ImgUrl = pictureService.GetProductPreviewPicturePath
+        //        Name = product.Name,
+        //        Discount = product.Discount,
+        //        Price = product.Price,
+        //        Rating = ratingsService.GetProductRating(product.ProductID)
+        //    };
+        //}
 
-        public IQueryable<ProductPreviewDTO> FindProductPreviews()
+        public IQueryable<ProductPreviewDTO> FindProductPreviews(string pictureBaseUrl)
         {
-            var query = this.context.Products.Select(x => new ProductPreviewDTO
-            {
-                ID = x.ProductID,
-                Name = x.Name,
-                Discount = x.Discount,
-                Price = x.Price,
-                Rating = ratingsService.GetProductRating(x.ProductID)
-            });
+           //blazingly fast
+            var productPictures = context.ProductPictures
+                .Where(p => p.IsPreview);
+
+            var productRatings = context.Ratings
+                .GroupBy(r => r.ProductID)
+                .Select(g => new
+                {
+                    ProductID = g.Key,
+                    AvgRating = (int?)g.Average(r => r.Score)
+                });
+
+            
+            var query = this.context.Products
+                .Select(product => new ProductPreviewDTO
+                {
+                    ID = product.ProductID,
+                    Name = product.Name,
+                    Discount = product.Discount,
+                    Price = product.Price,
+                    ImageUrl = productPictures
+                        .Where(p => p.ProductID == product.ProductID)
+                        .Select(p => $"{pictureBaseUrl}{p.PicturePath}")
+                        .FirstOrDefault(),
+                    Rating = productRatings
+                        .Where(r => r.ProductID == product.ProductID)
+                        .Select(r => r.AvgRating)
+                        .FirstOrDefault() ?? RatingsService.DEFAULT_RATING
+                });
+            
+
             return query;       
         }
         public bool IsProductValid(Product p)

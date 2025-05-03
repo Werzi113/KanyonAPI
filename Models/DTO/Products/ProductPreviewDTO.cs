@@ -3,6 +3,7 @@
     public class ProductPreviewDTO
     {
         public int ID { get; set; }
+        public string? ImageUrl { get; set; }
         public int Rating { get; set; }
         public decimal Price { get; set; }
         public decimal Discount { get; set; }

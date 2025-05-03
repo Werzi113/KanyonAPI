@@ -13,20 +13,23 @@ namespace WebApplication1.Controllers
     {
         public MyContext Context = new MyContext();
         public ProductsService ProductsService = new ProductsService();
-        
 
 
 
         [HttpGet("Previews/Amount")]
         public ObjectResult FindProductPreviews(int amount = -1)
         {
-            var items = ProductsService.FindProductPreviews();
+            string baseUrl = $"{Request.Scheme}://{Request.Host}";
+
+            var items = ProductsService.FindProductPreviews(baseUrl);
             return amount > 0 ? Ok(items.Take(amount).ToArray()) : Ok(items.ToArray());                    
         }
         [HttpGet("Previews/Filter")]
         public ObjectResult FilterProductPreviews(int minPrice, int maxPrice, int minRating, int amount = -1, string name = "")
         {
-            var items = ProductsService.FindProductPreviews()
+            string baseUrl = $"{Request.Scheme}://{Request.Host}";
+
+            var items = ProductsService.FindProductPreviews(baseUrl)
                 .Where(preview => preview.Price >= minPrice && preview.Price <= maxPrice && preview.Rating >= minRating);
 
             items = string.IsNullOrWhiteSpace(name) ? items : items.Where(preview => preview.Name.Contains(name.Trim()));

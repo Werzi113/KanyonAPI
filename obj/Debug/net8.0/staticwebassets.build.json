@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xnJ72cqXyzJNxMYhuTDu6Y2hIfddVtS200p7Gs2EZZw=",
+  "Hash": "oeoWybuIae0qI+zHy5dEHSbU0koCUrPLKZwwizD63a8=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebApplication1\\wwwroot",
       "Source": "WebApplication1",
-      "ContentRoot": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
+      "Identity": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "images/products/1/epic.png",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\1\\epic.png"
     },
     {
-      "Identity": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
+      "Identity": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\BackEnd\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "images/products/4/Bl4de_esports.jpg",
       "AssetKind": "All",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\4\\Bl4de_esports.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/4/img.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\4\\img.jfif"
     }
   ]
 }
