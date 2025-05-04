@@ -7,6 +7,7 @@
         public int Rating { get; set; }
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
-        public string Name {  get; set; }
+        public string Name { get; set; }
+        public int CategoryID { get; set; }
     }
 }

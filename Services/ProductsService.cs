@@ -26,6 +26,7 @@ namespace WebApplication1.Services
         public IQueryable<ProductPreviewDTO> FindProductPreviews(string pictureBaseUrl)
         {
            //blazingly fast
+           //5.4 i take it back, it would be better in one query, but im lazy
             var productPictures = context.ProductPictures
                 .Where(p => p.IsPreview);
 
@@ -52,7 +53,8 @@ namespace WebApplication1.Services
                     Rating = productRatings
                         .Where(r => r.ProductID == product.ProductID)
                         .Select(r => r.AvgRating)
-                        .FirstOrDefault() ?? RatingsService.DEFAULT_RATING
+                        .FirstOrDefault() ?? RatingsService.DEFAULT_RATING,
+                    CategoryID = product.CategoryId
                 });
             
 

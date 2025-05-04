@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\models\\dto\\products\\productpreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\dto\\products\\productpreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\services\\filterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:services\\filterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\services\\ratingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:services\\ratingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\services\\productpicturesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:services\\productpicturesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\services\\ratingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:services\\ratingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\controllers\\productpicturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\controllers\\attributes\\securedidattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\attributes\\securedidattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\controllers\\attributes\\securedattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\attributes\\securedattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\sasas\\onedrive\\plocha\\kanyonapi\\models\\dto\\products\\productpreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\dto\\products\\productpreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,33 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SecuredAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\Attributes\\SecuredAttribute.cs",
-              "RelativeDocumentMoniker": "Controllers\\Attributes\\SecuredAttribute.cs",
-              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\Attributes\\SecuredAttribute.cs",
-              "RelativeToolTip": "Controllers\\Attributes\\SecuredAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T17:42:16.03Z",
+              "WhenOpened": "2025-05-04T17:42:14.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductPicturesService.cs",
-              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Services\\ProductPicturesService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductPicturesService.cs",
-              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Services\\ProductPicturesService.cs",
-              "RelativeToolTip": "Services\\ProductPicturesService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADwvxEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:16:06.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ProductPicturesController.cs",
               "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\ProductPicturesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductPicturesController.cs",
@@ -92,51 +79,62 @@
               "RelativeToolTip": "Controllers\\ProductPicturesController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAAADAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:15:20.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T13:15:20.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "ProductPreviewDTO.cs",
               "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Models\\DTO\\Products\\ProductPreviewDTO.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\Products\\ProductPreviewDTO.cs",
               "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Models\\DTO\\Products\\ProductPreviewDTO.cs",
               "RelativeToolTip": "Models\\DTO\\Products\\ProductPreviewDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T13:11:10.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProductsService.cs",
               "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Services\\ProductsService.cs",
               "RelativeDocumentMoniker": "Services\\ProductsService.cs",
               "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Services\\ProductsService.cs",
               "RelativeToolTip": "Services\\ProductsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwD4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:11:16.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T13:11:16.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T13:09:27.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "FilterService.cs",
+              "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Services\\FilterService.cs",
+              "RelativeDocumentMoniker": "Services\\FilterService.cs",
+              "ToolTip": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Services\\FilterService.cs",
+              "RelativeToolTip": "Services\\FilterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:05:32.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RatingsController.cs",
               "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\RatingsController.cs",
               "RelativeDocumentMoniker": "Controllers\\RatingsController.cs",
@@ -144,12 +142,11 @@
               "RelativeToolTip": "Controllers\\RatingsController.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAHMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T12:18:51.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T12:18:51.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "SecuredRightAttribute.cs",
               "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\Attributes\\SecuredRightAttribute.cs",
               "RelativeDocumentMoniker": "Controllers\\Attributes\\SecuredRightAttribute.cs",
@@ -157,12 +154,11 @@
               "RelativeToolTip": "Controllers\\Attributes\\SecuredRightAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T17:42:21.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T17:42:21.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "RatingsService.cs",
               "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Services\\RatingsService.cs",
               "RelativeDocumentMoniker": "Services\\RatingsService.cs",
@@ -170,12 +166,11 @@
               "RelativeToolTip": "Services\\RatingsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T17:44:24.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T17:44:24.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SecuredIDAttribute.cs",
               "DocumentMoniker": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\Controllers\\Attributes\\SecuredIDAttribute.cs",
               "RelativeDocumentMoniker": "Controllers\\Attributes\\SecuredIDAttribute.cs",
@@ -183,8 +178,7 @@
               "RelativeToolTip": "Controllers\\Attributes\\SecuredIDAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T17:42:18.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T17:42:18.645Z"
             }
           ]
         }

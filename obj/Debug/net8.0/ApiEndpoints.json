@@ -478,33 +478,18 @@
     "ContainingType": "WebApplication1.Controllers.ProductsController",
     "Method": "FilterProductPreviews",
     "RelativePath": "api/Products/Previews/Filter",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "minPrice",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "maxPrice",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "minRating",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "filter",
+        "Type": "WebApplication1.Models.ProductFilter",
+        "IsRequired": true
       },
       {
         "Name": "amount",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "name",
-        "Type": "System.String",
         "IsRequired": false
       }
     ],

@@ -11,8 +11,9 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        public MyContext Context = new MyContext();
-        public ProductsService ProductsService = new ProductsService();
+        private MyContext context = new MyContext();
+        private ProductsService productsService = new ProductsService();
+        private FilterService filterService = new FilterService();
 
 
 
@@ -21,18 +22,19 @@ namespace WebApplication1.Controllers
         {
             string baseUrl = $"{Request.Scheme}://{Request.Host}";
 
-            var items = ProductsService.FindProductPreviews(baseUrl);
+            var items = productsService.FindProductPreviews(baseUrl);
             return amount > 0 ? Ok(items.Take(amount).ToArray()) : Ok(items.ToArray());                    
         }
-        [HttpGet("Previews/Filter")]
-        public ObjectResult FilterProductPreviews(int minPrice, int maxPrice, int minRating, int amount = -1, string name = "")
+        [HttpPost("Previews/Filter")]
+        public ObjectResult FilterProductPreviews(ProductFilter filter, int amount = -1)
         {
             string baseUrl = $"{Request.Scheme}://{Request.Host}";
 
-            var items = ProductsService.FindProductPreviews(baseUrl)
-                .Where(preview => preview.Price >= minPrice && preview.Price <= maxPrice && preview.Rating >= minRating);
-
-            items = string.IsNullOrWhiteSpace(name) ? items : items.Where(preview => preview.Name.Contains(name.Trim()));
+            var items = productsService.FindProductPreviews(baseUrl);
+            items = filterService.FilterByPriceRange(items, filter.MinPrice, filter.MaxPrice);
+            items = filterService.FilterByRating(items, filter.MinRating);
+            items = filterService.FilterByName(items, filter.Name);
+            items = filterService.FilterByCategory(items, filter.CategoryID);
 
             return amount > 0 ? Ok(items.Take(amount).ToArray()) : Ok(items.ToArray());
         }
@@ -40,13 +42,13 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public ObjectResult FindProducts(int amount = -1)
         {
-            return amount > 0 ? Ok(this.Context.Products.Take(amount).ToArray()) : Ok(this.Context.Products.ToArray());
+            return amount > 0 ? Ok(this.context.Products.Take(amount).ToArray()) : Ok(this.context.Products.ToArray());
         }
 
         [HttpGet("{id}")]
         public IActionResult FindProductById(int id)
         {
-            Product p = this.Context.Products.Find(id);
+            Product? p = this.context.Products.Find(id);
             if (p == null)
             {
                 return NotFound(new { message = "Product not found " });
@@ -58,13 +60,13 @@ namespace WebApplication1.Controllers
         [HttpPost("Create")]
         public IActionResult CreateProduct(Product p)
         {
-            if (!this.ProductsService.IsProductValid(p))
+            if (!this.productsService.IsProductValid(p))
             {
                 return BadRequest(new { message = "Invalid product data" });
             }
 
-            this.Context.Products.Add(p);
-            this.Context.SaveChanges();
+            this.context.Products.Add(p);
+            this.context.SaveChanges();
 
             return Ok(p);
         }
@@ -72,13 +74,12 @@ namespace WebApplication1.Controllers
         [HttpPut("Update:{id}")]
         public IActionResult UpdateProduct(int id, Product newProduct)
         {
-            if (!this.ProductsService.IsProductValid(newProduct))
+            if (!this.productsService.IsProductValid(newProduct))
             {
                 return BadRequest(new { message = "Invalid product data" });
             }
 
-            Product p = this.Context.Products.Find(id);
-
+            Product p = this.context.Products.Find(id);
 
 
             p.Name = newProduct.Name;
@@ -88,17 +89,21 @@ namespace WebApplication1.Controllers
             p.Discount = newProduct.Discount;
             p.State = newProduct.State;
 
-            this.Context.SaveChanges();
+            this.context.SaveChanges();
 
             return Ok(p);
         }
         [HttpDelete("Delete:{id}")]
         public bool DeleteProduct(int id)
         {
-            Product p = this.Context.Products.Find(id);
+            Product? p = this.context.Products.Find(id);
+            if (p == null)
+            {
+                return false;
+            }
 
-            this.Context.Products.Remove(p);
-            this.Context.SaveChanges();
+            this.context.Products.Remove(p);
+            this.context.SaveChanges();
 
             return true;
         }
