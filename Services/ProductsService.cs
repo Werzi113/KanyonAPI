@@ -35,7 +35,7 @@ namespace WebApplication1.Services
                 .Select(g => new
                 {
                     ProductID = g.Key,
-                    AvgRating = (int?)g.Average(r => r.Score)
+                    AvgRating = g.Average(r => r.Score)
                 });
 
             
@@ -50,10 +50,10 @@ namespace WebApplication1.Services
                         .Where(p => p.ProductID == product.ProductID)
                         .Select(p => $"{pictureBaseUrl}{p.PicturePath}")
                         .FirstOrDefault(),
-                    Rating = productRatings
+                    Rating = (int?)Math.Round(productRatings
                         .Where(r => r.ProductID == product.ProductID)
                         .Select(r => r.AvgRating)
-                        .FirstOrDefault() ?? RatingsService.DEFAULT_RATING,
+                        .FirstOrDefault()) ?? RatingsService.DEFAULT_RATING,
                     CategoryID = product.CategoryId
                 });
             
