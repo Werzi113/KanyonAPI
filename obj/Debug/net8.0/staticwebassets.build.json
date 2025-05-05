@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JsoS3xRQdwknzdMvB33EFjgWfw0ysO10nUAiPIBsIz0=",
+  "Hash": "DyGlhOza2jHmJMf20ZrDhIQtt3FLR8Dc092L/3TA5h0=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -10,322 +10,315 @@
     {
       "Name": "WebApplication1\\wwwroot",
       "Source": "WebApplication1",
-      "ContentRoot": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
-      "RelativePath": "images/products/1/epic#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/1/epic.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a08j17napc",
-      "Integrity": "SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\1\\epic.png"
     },
     {
-      "Identity": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\10\\slepice.png",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
-      "RelativePath": "images/products/4/Bl4de_esports#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/products/10/slepice.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qzack5jv0m",
-      "Integrity": "pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\10\\slepice.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\11\\slepice.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/11/slepice.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\11\\slepice.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\12\\slepice.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/12/slepice.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\12\\slepice.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\13\\mixer.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/13/mixer.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\13\\mixer.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\14\\pračka.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/14/pračka.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\14\\pračka.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\15\\triko.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/15/triko.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\15\\triko.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\2\\neco.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/2/neco.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\2\\neco.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\3\\neco.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/3/neco.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\3\\neco.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/4/Bl4de_esports.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\4\\Bl4de_esports.jpg"
     },
     {
-      "Identity": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
-      "RelativePath": "images/products/4/img#[.{fingerprint}]?.jfif",
+      "RelativePath": "images/products/4/img.jfif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "apal0azcvr",
-      "Integrity": "kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\4\\img.jfif"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "images/products/1/epic.a08j17napc.png",
-      "AssetFile": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3807"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 12:49:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "a08j17napc"
-        },
-        {
-          "Name": "label",
-          "Value": "images/products/1/epic.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I="
-        }
-      ]
     },
     {
-      "Route": "images/products/1/epic.png",
-      "AssetFile": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3807"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 12:49:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SryzXF6/zmpBWe/C/Pm1TrBJ4zzmUA1Getxr+84kV/I="
-        }
-      ]
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\6\\neco.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/6/neco.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\6\\neco.png"
     },
     {
-      "Route": "images/products/4/Bl4de_esports.jpg",
-      "AssetFile": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "43688"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 12:49:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78="
-        }
-      ]
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\7\\neco.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/7/neco.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\7\\neco.png"
     },
     {
-      "Route": "images/products/4/Bl4de_esports.qzack5jv0m.jpg",
-      "AssetFile": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "43688"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 12:49:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qzack5jv0m"
-        },
-        {
-          "Name": "label",
-          "Value": "images/products/4/Bl4de_esports.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pnou4ROP/18R5cZ3Lm3A0WTB3TE965JFc1wn8paWF78="
-        }
-      ]
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\8\\neco.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/8/neco.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\8\\neco.png"
     },
     {
-      "Route": "images/products/4/img.apal0azcvr.jfif",
-      "AssetFile": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40917"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/pjpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 12:49:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "apal0azcvr"
-        },
-        {
-          "Name": "label",
-          "Value": "images/products/4/img.jfif"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M="
-        }
-      ]
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\9\\neco.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/9/neco.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\9\\neco.png"
     },
     {
-      "Route": "images/products/4/img.jfif",
-      "AssetFile": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40917"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/pjpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 12:49:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M="
-        }
-      ]
+      "Identity": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\9\\slepice.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/products/9/slepice.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\9\\slepice.png"
     }
   ]
 }

@@ -1,20 +1,68 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\10\\slepice.png",
+      "PackagePath": "staticwebassets\\images\\products\\10\\slepice.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\11\\slepice.png",
+      "PackagePath": "staticwebassets\\images\\products\\11\\slepice.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\12\\slepice.png",
+      "PackagePath": "staticwebassets\\images\\products\\12\\slepice.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\13\\mixer.png",
+      "PackagePath": "staticwebassets\\images\\products\\13\\mixer.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\14\\pračka.png",
+      "PackagePath": "staticwebassets\\images\\products\\14\\pračka.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\15\\triko.png",
+      "PackagePath": "staticwebassets\\images\\products\\15\\triko.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
       "PackagePath": "staticwebassets\\images\\products\\1\\epic.png"
     },
     {
-      "Id": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\2\\neco.png",
+      "PackagePath": "staticwebassets\\images\\products\\2\\neco.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\3\\neco.png",
+      "PackagePath": "staticwebassets\\images\\products\\3\\neco.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
       "PackagePath": "staticwebassets\\images\\products\\4\\Bl4de_esports.jpg"
     },
     {
-      "Id": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
       "PackagePath": "staticwebassets\\images\\products\\4\\img.jfif"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\6\\neco.png",
+      "PackagePath": "staticwebassets\\images\\products\\6\\neco.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\7\\neco.png",
+      "PackagePath": "staticwebassets\\images\\products\\7\\neco.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\8\\neco.png",
+      "PackagePath": "staticwebassets\\images\\products\\8\\neco.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\9\\neco.png",
+      "PackagePath": "staticwebassets\\images\\products\\9\\neco.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\9\\slepice.png",
+      "PackagePath": "staticwebassets\\images\\products\\9\\slepice.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
