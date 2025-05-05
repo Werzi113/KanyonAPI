@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 12:51:42 GMT"
+          "Value": "Mon, 05 May 2025 12:49:04 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 12:51:42 GMT"
+          "Value": "Mon, 05 May 2025 12:49:04 GMT"
         }
       ],
       "EndpointProperties": [
@@ -111,7 +111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 12:45:27 GMT"
+          "Value": "Mon, 05 May 2025 12:49:04 GMT"
         }
       ],
       "EndpointProperties": [
@@ -148,7 +148,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 12:45:27 GMT"
+          "Value": "Mon, 05 May 2025 12:49:04 GMT"
         }
       ],
       "EndpointProperties": [
@@ -163,6 +163,88 @@
         {
           "Name": "label",
           "Value": "images/products/4/Bl4de_esports.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/products/4/img.apal0azcvr.jfif",
+      "AssetFile": "images/products/4/img.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 12:49:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "apal0azcvr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M="
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/4/img.jfif"
+        }
+      ]
+    },
+    {
+      "Route": "images/products/4/img.jfif",
+      "AssetFile": "images/products/4/img.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 12:49:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kj6hH32faCmAwMhqo1cduMp5vkxB6QwrWWK1qpCb26M="
         }
       ]
     }

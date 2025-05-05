@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Authentication/Username": {
+    "/api/Authentication": {
       "post": {
         "tags": [
           "Authentication"
@@ -14,48 +14,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsernameLoginDTO"
+                "$ref": "#/components/schemas/LoginDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsernameLoginDTO"
+                "$ref": "#/components/schemas/LoginDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsernameLoginDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Authentication/Email": {
-      "post": {
-        "tags": [
-          "Authentication"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/EmailLoginDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/EmailLoginDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/EmailLoginDTO"
+                "$ref": "#/components/schemas/LoginDTO"
               }
             }
           }
@@ -201,6 +170,52 @@
           {
             "name": "id",
             "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Categories/All/{id}": {
+      "get": {
+        "tags": [
+          "Categories"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Categories/Path/{id}": {
+      "get": {
+        "tags": [
+          "Categories"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -415,6 +430,52 @@
         }
       }
     },
+    "/api/Orders/User/{id}": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Orders/Products/{id}": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/ProductPictures/{productID}/Preview": {
       "get": {
         "tags": [
@@ -581,35 +642,11 @@
       }
     },
     "/api/Products/Previews/Filter": {
-      "get": {
+      "post": {
         "tags": [
           "Products"
         ],
         "parameters": [
-          {
-            "name": "minPrice",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "maxPrice",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "minRating",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
           {
             "name": "amount",
             "in": "query",
@@ -618,16 +655,27 @@
               "format": "int32",
               "default": -1
             }
-          },
-          {
-            "name": "name",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "default": ""
-            }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductFilter"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -795,6 +843,38 @@
       }
     },
     "/api/Ratings/{UserID}:{ProductID}": {
+      "get": {
+        "tags": [
+          "Ratings"
+        ],
+        "parameters": [
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ProductID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Ratings/Exists/{UserID}:{ProductID}": {
       "get": {
         "tags": [
           "Ratings"
@@ -1781,48 +1861,6 @@
         }
       }
     },
-    "/api/Users/{id}/change-unique": {
-      "put": {
-        "tags": [
-          "Users"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeUniqueInfoDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeUniqueInfoDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeUniqueInfoDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Users/{id}/change-password": {
       "put": {
         "tags": [
@@ -2241,6 +2279,29 @@
         }
       }
     },
+    "/api/Wishlist/User/{id}/Previews": {
+      "get": {
+        "tags": [
+          "Wishlist"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Wishlist/User/{id}": {
       "get": {
         "tags": [
@@ -2494,8 +2555,6 @@
         "required": [
           "createdAt",
           "email",
-          "firstName",
-          "lastName",
           "password",
           "username"
         ],
@@ -2519,13 +2578,15 @@
           },
           "firstName": {
             "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
           },
           "lastName": {
             "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
           },
           "createdAt": {
             "type": "string",
@@ -2568,20 +2629,33 @@
       },
       "ChangeInfoDTO": {
         "required": [
-          "firstName",
-          "lastName"
+          "email",
+          "username"
         ],
         "type": "object",
         "properties": {
+          "email": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "format": "email"
+          },
+          "username": {
+            "maxLength": 100,
+            "minLength": 5,
+            "type": "string"
+          },
           "firstName": {
             "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
           },
           "lastName": {
             "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
           },
           "phoneNumber": {
             "maxLength": 16,
@@ -2631,35 +2705,7 @@
             "type": "string"
           },
           "oldPassword": {
-            "maxLength": 100,
-            "minLength": 5,
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ChangeUniqueInfoDTO": {
-        "required": [
-          "email",
-          "password",
-          "username"
-        ],
-        "type": "object",
-        "properties": {
-          "email": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string",
-            "format": "email"
-          },
-          "username": {
-            "maxLength": 100,
-            "minLength": 5,
-            "type": "string"
-          },
-          "password": {
-            "maxLength": 100,
-            "minLength": 5,
+            "minLength": 1,
             "type": "string"
           }
         },
@@ -2818,8 +2864,6 @@
       "CreateUserDTO": {
         "required": [
           "email",
-          "firstName",
-          "lastName",
           "password",
           "username"
         ],
@@ -2843,13 +2887,15 @@
           },
           "firstName": {
             "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
           },
           "lastName": {
             "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
           },
           "phoneNumber": {
             "maxLength": 16,
@@ -3052,10 +3098,10 @@
         },
         "additionalProperties": false
       },
-      "EmailLoginDTO": {
+      "LoginDTO": {
         "required": [
-          "email",
-          "password"
+          "password",
+          "username"
         ],
         "type": "object",
         "properties": {
@@ -3064,11 +3110,10 @@
             "minLength": 0,
             "type": "string"
           },
-          "email": {
+          "username": {
             "maxLength": 100,
             "minLength": 0,
-            "type": "string",
-            "format": "email"
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -3166,6 +3211,36 @@
         },
         "additionalProperties": false
       },
+      "ProductFilter": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "categoryID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minPrice": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxPrice": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minRating": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "RightDTO": {
         "required": [
           "right"
@@ -3232,26 +3307,6 @@
         ],
         "type": "integer",
         "format": "int32"
-      },
-      "UsernameLoginDTO": {
-        "required": [
-          "password",
-          "username"
-        ],
-        "type": "object",
-        "properties": {
-          "password": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "username": {
-            "maxLength": 100,
-            "minLength": 5,
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
       },
       "WeatherForecast": {
         "type": "object",

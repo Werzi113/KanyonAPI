@@ -1,16 +1,20 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
+      "Id": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\epic.png",
       "PackagePath": "staticwebassets\\images\\products\\1\\epic.png"
     },
     {
-      "Id": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
+      "Id": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\Bl4de_esports.jpg",
       "PackagePath": "staticwebassets\\images\\products\\4\\Bl4de_esports.jpg"
     },
     {
-      "Id": "C:\\Users\\sasas\\OneDrive\\Plocha\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
+      "Id": "C:\\Users\\Safranekjan\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\img.jfif",
       "PackagePath": "staticwebassets\\images\\products\\4\\img.jfif"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
