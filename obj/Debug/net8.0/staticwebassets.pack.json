@@ -29,8 +29,32 @@
       "PackagePath": "staticwebassets\\images\\products\\1\\epic.png"
     },
     {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\macbook1.png",
+      "PackagePath": "staticwebassets\\images\\products\\1\\macbook1.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\1\\macbook2.png",
+      "PackagePath": "staticwebassets\\images\\products\\1\\macbook2.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\2\\fotak1.png",
+      "PackagePath": "staticwebassets\\images\\products\\2\\fotak1.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\2\\fotak2.png",
+      "PackagePath": "staticwebassets\\images\\products\\2\\fotak2.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\2\\fotak3.png",
+      "PackagePath": "staticwebassets\\images\\products\\2\\fotak3.png"
+    },
+    {
       "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\2\\neco.png",
       "PackagePath": "staticwebassets\\images\\products\\2\\neco.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\3\\hodinky1.png",
+      "PackagePath": "staticwebassets\\images\\products\\3\\hodinky1.png"
     },
     {
       "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\3\\neco.png",
@@ -45,12 +69,44 @@
       "PackagePath": "staticwebassets\\images\\products\\4\\img.jfif"
     },
     {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\4\\kfcbucket.png",
+      "PackagePath": "staticwebassets\\images\\products\\4\\kfcbucket.png"
+    },
+    {
       "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\6\\neco.png",
       "PackagePath": "staticwebassets\\images\\products\\6\\neco.png"
     },
     {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\6\\panev1.png",
+      "PackagePath": "staticwebassets\\images\\products\\6\\panev1.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\6\\panev2.png",
+      "PackagePath": "staticwebassets\\images\\products\\6\\panev2.png"
+    },
+    {
       "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\7\\neco.png",
       "PackagePath": "staticwebassets\\images\\products\\7\\neco.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\7\\stan1.png",
+      "PackagePath": "staticwebassets\\images\\products\\7\\stan1.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\7\\stan2.png",
+      "PackagePath": "staticwebassets\\images\\products\\7\\stan2.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\7\\stan3.png",
+      "PackagePath": "staticwebassets\\images\\products\\7\\stan3.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\8\\airpod1.png",
+      "PackagePath": "staticwebassets\\images\\products\\8\\airpod1.png"
+    },
+    {
+      "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\8\\airpod2.png",
+      "PackagePath": "staticwebassets\\images\\products\\8\\airpod2.png"
     },
     {
       "Id": "C:\\Users\\Matouš\\Desktop\\KanyonAPI\\wwwroot\\images\\products\\8\\neco.png",

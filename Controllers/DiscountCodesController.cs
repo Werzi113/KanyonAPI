@@ -29,15 +29,15 @@ namespace WebApplication1.Controllers
             return Ok(code);
         }
 
-        [HttpGet("Valid")]
-        public IActionResult GetValidCodeByCode(CodeDTO codeDTO)
+        [HttpGet("Valid/{code}")]
+        public IActionResult GetValidCodeByCode(string code)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            DiscountCode dbCode = _context.DiscountCodes.FirstOrDefault(Code => Code.Code == codeDTO.Code && Code.ExpiryDate > DateTime.Now);
+            DiscountCode dbCode = _context.DiscountCodes.FirstOrDefault(Code => Code.Code == code && Code.ExpiryDate > DateTime.Now);
             
             if (dbCode == null)
             {
