@@ -224,14 +224,14 @@
   {
     "ContainingType": "WebApplication1.Controllers.DiscountCodesController",
     "Method": "GetValidCodeByCode",
-    "RelativePath": "api/DiscountCodes/Valid",
+    "RelativePath": "api/DiscountCodes/Valid/{code}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "codeDTO",
-        "Type": "WebApplication1.Models.DTO.DiscountCodes.CodeDTO",
+        "Name": "code",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -899,9 +899,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "amount",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "paymentInfo",
+        "Type": "WebApplication1.Models.DTO.Transactions.PaymentInformationDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

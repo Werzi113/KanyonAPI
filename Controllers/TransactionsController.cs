@@ -17,12 +17,13 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("CreatePaymentIntent")]
-        public IActionResult CreatePaymentIntent(int amount)
+        public IActionResult CreatePaymentIntent([FromBody]PaymentInformationDTO paymentInfo)
         {
+            Console.WriteLine(paymentInfo);
             var options = new PaymentIntentCreateOptions
             {
-                Amount = amount, 
-                Currency = "usd",
+                Amount = (long)paymentInfo.Amount, 
+                Currency = paymentInfo.Currency,
                 PaymentMethod = "pm_card_visa", 
                 AutomaticPaymentMethods = new PaymentIntentAutomaticPaymentMethodsOptions
                 {
@@ -30,6 +31,7 @@ namespace WebApplication1.Controllers
                     AllowRedirects = "never"
                 },
             };
+            
             var service = new PaymentIntentService();
             PaymentIntent intent = service.Create(options);
             

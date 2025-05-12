@@ -41,7 +41,7 @@ namespace WebApplication1.Controllers
                     Amount = item.Amount,
                     Discount = p.Discount,
                     OrderID = o.OrderID,
-                    Price = p.Price,
+                    UnitPrice = p.Price,
                     ProductID = item.ProductID,
                 });
             }
@@ -73,7 +73,7 @@ namespace WebApplication1.Controllers
 
                 foreach (var itemDetail in context.OrderDetails.Where(detail => detail.OrderID == item.OrderID).ToArray())
                 {
-                    price += itemDetail.Price * (1 - itemDetail.Discount) * itemDetail.Amount;
+                    price += itemDetail.UnitPrice * (1 - itemDetail.Discount) * itemDetail.Amount;
                 }
 
                 if (item.DiscountCodeID != null)
@@ -115,7 +115,7 @@ namespace WebApplication1.Controllers
                 {
                     Discount = item.Discount,
                     ProductID = product.ProductID,
-                    Price = item.Price,
+                    Price = item.UnitPrice,
                     Name = product.Name,
                     OrderID = id,
                     Quantity = item.Amount
