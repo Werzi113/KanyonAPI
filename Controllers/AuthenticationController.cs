@@ -2,6 +2,7 @@
 using WebApplication1.Models;
 using WebApplication1.Models.DTO.Login;
 using WebApplication1.Services;
+using WebApplication1.Enums;
 
 namespace WebApplication1.Controllers
 {
@@ -29,6 +30,34 @@ namespace WebApplication1.Controllers
             if (!BCrypt.Net.BCrypt.EnhancedVerify(login.Password, user.Password))
             {
                 return StatusCode(403, "Wrong Password");
+            }
+
+            string token = _service.Create(user.UserID);
+
+            return Ok(new { token = token, id = user.UserID });
+        }
+
+        [HttpPost("Admin")]
+        public IActionResult LoginByUsernameAdmin(LoginDTO login)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            User user = _context.Users.FirstOrDefault(User => User.Username == login.Username || User.Email == login.Username);
+
+            if (user == null)
+            {
+                return NotFound("User doesn't exist");
+            }
+            if (!BCrypt.Net.BCrypt.EnhancedVerify(login.Password, user.Password))
+            {
+                return StatusCode(403, "Wrong Password");
+            }
+            if (_context.UserRights.Find(user.UserID, UserRightType.Admin_Read.ToString()) == null)
+            {
+                return StatusCode(403, "User doesn't have permission");
             }
 
             string token = _service.Create(user.UserID);
