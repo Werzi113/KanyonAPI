@@ -24,6 +24,13 @@ namespace WebApplication1.Controllers
             return Ok(_context.Users.ToArray());
         }
 
+        [HttpGet("GetUserPreviews")]
+        public IActionResult GetPreviews()
+        {
+            var users = _context.Users.ToArray();
+            return Ok(users.Select(user => new UserPreview(user)));
+        }
+
         [HttpGet("{id}/Admin")]
         [SecuredRight(UserRightType.Admin_Read)]
         public IActionResult GetUserByIDAdmin(int id)
