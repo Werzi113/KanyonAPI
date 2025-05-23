@@ -58,6 +58,38 @@ namespace WebApplication1.Controllers
             return Ok(dbRight);
         }
 
+        [HttpPut("UpdateRights/{id}")]
+        [SecuredRight(UserRightType.Admin_Edit)]
+        public IActionResult EditRights(int id, UserRightType[] rights)
+        {
+            if (_context.Users.Find(id) == null)
+            {
+                return NotFound("User doesn't exist");
+            }
+
+            var existingRights = _context.UserRights.Where(right => right.UserID == id).ToArray();
+            foreach (var item in existingRights)
+            {
+                if (!rights.Contains(Enum.Parse<UserRightType>(item.Right)))
+                {
+                    _context.UserRights.Remove(item);
+                }
+            }
+            foreach (var item in rights)
+            {
+                if (!existingRights.Select(right => right.Right).Contains(item.ToString()))
+                {
+                    UserRight newRight = new UserRight();
+                    newRight.Right = item.ToString();
+                    newRight.UserID = id;
+                    _context.UserRights.Add(newRight);
+                }
+            }
+            _context.SaveChanges();
+
+            return Ok(_context.UserRights.Where(right => right.UserID == id));
+        }
+
         [HttpPost("{id}")]
         [SecuredRight(UserRightType.Admin_Add)]
         public IActionResult AddRight(int id, RightDTO right)

@@ -1028,6 +1028,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApplication1.Controllers.UserRightsController",
+    "Method": "EditRights",
+    "RelativePath": "api/UserRights/UpdateRights/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "rights",
+        "Type": "WebApplication1.Enums.UserRightType[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApplication1.Controllers.UsersController",
     "Method": "CreateUser",
     "RelativePath": "api/Users",
