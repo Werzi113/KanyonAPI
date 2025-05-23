@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Controllers.Attributes;
 using WebApplication1.Models;
 using WebApplication1.Models;
 using WebApplication1.Models.DTO.Products;
@@ -37,6 +38,20 @@ namespace WebApplication1.Controllers
             items = filterService.FilterByCategory(items, filter.CategoryID);
 
             return amount > 0 ? Ok(items.Take(amount).ToArray()) : Ok(items.ToArray());
+        }
+
+        [HttpGet("ProductNamePairs")]
+        public IActionResult GetProductNamePairs()
+        {
+            var res = context.Products.Select(item =>
+                new ProductNamePairDTO()
+                {
+                    Name = item.Name,
+                    ProductID = item.ProductID,
+                }
+            );
+
+            return Ok(res.ToArray());
         }
 
         [HttpGet]

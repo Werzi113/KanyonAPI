@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Student2\\Desktop\\Nov\u00E1 slo\u017Eka\\KanyonAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\KanyonAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\student2\\desktop\\nov\u00E1 slo\u017Eka\\kanyonapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\kanyonapi\\controllers\\stockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:controllers\\stockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\student2\\desktop\\nov\u00E1 slo\u017Eka\\kanyonapi\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\student2\\desktop\\nov\u00E1 slo\u017Eka\\kanyonapi\\models\\dto\\categories\\categorypreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\dto\\categories\\categorypreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|c:\\users\\honza\\documents\\projects\\kanyonprojekt\\kanyonapi\\models\\dto\\stocks\\createstockdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4928BAAD-2CC6-485D-A11F-3A39359C2EF3}|WebApplication1.csproj|solutionrelative:models\\dto\\stocks\\createstockdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,42 +21,33 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Student2\\Desktop\\Nov\u00E1 slo\u017Eka\\KanyonAPI\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\Student2\\Desktop\\Nov\u00E1 slo\u017Eka\\KanyonAPI\\Services\\CategoryService.cs",
-              "RelativeToolTip": "Services\\CategoryService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T13:40:54.029Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryPreviewDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Student2\\Desktop\\Nov\u00E1 slo\u017Eka\\KanyonAPI\\Models\\DTO\\Categories\\CategoryPreviewDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\Categories\\CategoryPreviewDTO.cs",
-              "ToolTip": "C:\\Users\\Student2\\Desktop\\Nov\u00E1 slo\u017Eka\\KanyonAPI\\Models\\DTO\\Categories\\CategoryPreviewDTO.cs",
-              "RelativeToolTip": "Models\\DTO\\Categories\\CategoryPreviewDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CreateStockDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\KanyonAPI\\Models\\DTO\\Stocks\\CreateStockDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\Stocks\\CreateStockDTO.cs",
+              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\KanyonAPI\\Models\\DTO\\Stocks\\CreateStockDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\Stocks\\CreateStockDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T11:12:19.477Z",
+              "WhenOpened": "2025-05-23T23:16:25.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Student2\\Desktop\\Nov\u00E1 slo\u017Eka\\KanyonAPI\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Student2\\Desktop\\Nov\u00E1 slo\u017Eka\\KanyonAPI\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAIwJMAAAANAAAAAAAAAA==",
+              "Title": "StocksController.cs",
+              "DocumentMoniker": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\KanyonAPI\\Controllers\\StocksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StocksController.cs",
+              "ToolTip": "C:\\Users\\Honza\\Documents\\Projects\\KanyonProjekt\\KanyonAPI\\Controllers\\StocksController.cs",
+              "RelativeToolTip": "Controllers\\StocksController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA6wCIAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T11:01:04.117Z",
+              "WhenOpened": "2025-05-23T18:21:00.098Z",
               "EditorCaption": ""
             }
           ]

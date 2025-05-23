@@ -24,7 +24,7 @@ namespace WebApplication1.Models.DTO.Warehouses
         public Warehouse CreateWarehouse()
         {
             Warehouse warehouse = new Warehouse();
-            warehouse.WarehouseId = 0;
+            warehouse.WarehouseID = 0;
             warehouse.City = City;
             warehouse.Country = Country;
             warehouse.PostCode = PostCode;

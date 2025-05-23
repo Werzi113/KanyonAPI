@@ -152,7 +152,7 @@ namespace WebApplication1.Controllers
             var children = _categoryService.getAllChildrenOfCategory(id);
             if (children.Any(item => item.CategoryID == categoryDTO.ParentID))
             {
-                return Forbid("Category can't have its child as a parent");
+                return StatusCode(403, "Category can't have its child as a parent");
             }
 
             dbCategory.ParentID = categoryDTO.ParentID;

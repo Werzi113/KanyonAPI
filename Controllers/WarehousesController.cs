@@ -50,7 +50,7 @@ namespace WebApplication1.Controllers
             _context.Warehouses.Add(dbWarehouse);
             _context.SaveChanges();
 
-            return CreatedAtAction(nameof(GetWarehouseByID), new { id = dbWarehouse.WarehouseId }, dbWarehouse);
+            return CreatedAtAction(nameof(GetWarehouseByID), new { id = dbWarehouse.WarehouseID }, dbWarehouse);
         }
 
         [HttpPut("{id}")]

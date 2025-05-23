@@ -27,7 +27,7 @@ namespace WebApplication1.Controllers
         [SecuredRight(UserRightType.Admin_Read)]
         public IActionResult GetStocksByWarehouse(int id)
         {
-            if (!_context.Warehouses.Any(Warehouse => Warehouse.WarehouseId == id))
+            if (!_context.Warehouses.Any(Warehouse => Warehouse.WarehouseID == id))
             {
                 return NotFound("Warehouse doesn't exist");   
             }
@@ -105,6 +105,32 @@ namespace WebApplication1.Controllers
             return Ok(stocks);
         }
 
+        [HttpGet("Aggregated/{id}")]
+        public IActionResult GetStockedAmountByWarehouse(int id)
+        {
+            if (!_context.Warehouses.Any(item => item.WarehouseID == id))
+            {
+                return NotFound("Warehouse doesn't exist");
+            }
+
+            var res = _context.Stocks.Where(item => item.WarehouseID == id).GroupBy(item => item.ProductID).Select(item =>
+                new 
+                {
+                    Amount = item.Sum(item => item.Amount),
+                    WarehouseID = id,
+                    ProductID = item.Key
+                }
+            ).Join(_context.Products, item => item.ProductID, product => product.ProductID, (item, product) => new AggregatedStockDTO() 
+                { 
+                    Amount = item.Amount, 
+                    Name = product.Name, 
+                    ProductID = item.ProductID, 
+                    WarehouseID = item.WarehouseID
+                });
+
+            return Ok(res.ToArray());
+        }
+
         [HttpPost]
         [SecuredRight(UserRightType.Admin_Add)]
         public IActionResult AddStock(CreateStockDTO stock)
@@ -117,7 +143,7 @@ namespace WebApplication1.Controllers
             {
                 return NotFound("Product doesn't exist");
             }
-            if (!_context.Warehouses.Any(Warehouse => Warehouse.WarehouseId == stock.WarehouseID))
+            if (!_context.Warehouses.Any(Warehouse => Warehouse.WarehouseID == stock.WarehouseID))
             {
                 return NotFound("Warehouse doesn't exist");
             }
@@ -148,7 +174,7 @@ namespace WebApplication1.Controllers
             {
                 return NotFound("Product doesn't exist");
             }
-            if (!_context.Warehouses.Any(Warehouse => Warehouse.WarehouseId == stock.WarehouseID))
+            if (!_context.Warehouses.Any(Warehouse => Warehouse.WarehouseID == stock.WarehouseID))
             {
                 return NotFound("Warehouse doesn't exist");
             }

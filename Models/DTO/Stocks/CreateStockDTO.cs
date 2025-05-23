@@ -24,6 +24,7 @@ namespace WebApplication1.Models.DTO.Stocks
             stock.WarehouseID = WarehouseID;
             stock.Amount = Amount;
             stock.StockID = 0;
+            stock.Date = DateTime.Now;
 
             return stock;
         }
