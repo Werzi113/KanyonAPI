@@ -159,6 +159,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApplication1.Controllers.CategoriesController",
+    "Method": "GetCategoryPreviews",
+    "RelativePath": "api/Categories/Previews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApplication1.Controllers.DiscountCodesController",
     "Method": "AddCode",
     "RelativePath": "api/DiscountCodes",
