@@ -717,6 +717,18 @@
         }
       }
     },
+    "/api/Products/ProductNamePairs": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Products": {
       "get": {
         "tags": [
@@ -1421,6 +1433,29 @@
         }
       }
     },
+    "/api/Stocks/Aggregated/{id}": {
+      "get": {
+        "tags": [
+          "Stocks"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Stocks": {
       "post": {
         "tags": [
@@ -1507,27 +1542,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Transactions/ConfirmPaymentIntent": {
-      "get": {
-        "tags": [
-          "Transactions"
-        ],
-        "parameters": [
-          {
-            "name": "paymentIntentID",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -3213,10 +3227,6 @@
       "OrderCreateDTO": {
         "type": "object",
         "properties": {
-          "orderID": {
-            "type": "integer",
-            "format": "int32"
-          },
           "discountCodeID": {
             "type": "integer",
             "format": "int32",
@@ -3247,10 +3257,6 @@
           "amount": {
             "type": "integer",
             "format": "int32"
-          },
-          "discount": {
-            "type": "number",
-            "format": "double"
           }
         },
         "additionalProperties": false
@@ -3273,8 +3279,8 @@
         "type": "object",
         "properties": {
           "amount": {
-            "type": "number",
-            "format": "double"
+            "type": "integer",
+            "format": "int32"
           },
           "currency": {
             "type": "string",

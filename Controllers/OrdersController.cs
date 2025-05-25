@@ -18,7 +18,6 @@ namespace WebApplication1.Controllers
         {
             Order o = new Order()
             {
-                OrderID = order.OrderID,
                 OrderedAt = DateTime.Now,
                 DiscountCodeID = order.DiscountCodeID,
                 UserID = order.UserID,

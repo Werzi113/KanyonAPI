@@ -19,29 +19,37 @@ namespace WebApplication1.Controllers
         [HttpPost("CreatePaymentIntent")]
         public IActionResult CreatePaymentIntent([FromBody]PaymentInformationDTO paymentInfo)
         {
-            Console.WriteLine(paymentInfo);
-            var options = new PaymentIntentCreateOptions
+            try
             {
-                Amount = (long)paymentInfo.Amount, 
-                Currency = paymentInfo.Currency,
-                PaymentMethod = "pm_card_visa", 
-                AutomaticPaymentMethods = new PaymentIntentAutomaticPaymentMethodsOptions
-                {
-                    Enabled = true,
-                    AllowRedirects = "never"
-                },
-            };
-            
-            var service = new PaymentIntentService();
-            PaymentIntent intent = service.Create(options);
-            
 
-            return Ok(new { clientSecret = intent.ClientSecret, ID = intent.Id });
+                var options = new PaymentIntentCreateOptions
+                {
+                    Amount = (long)paymentInfo.Amount,
+                    Currency = paymentInfo.Currency,
+                    PaymentMethod = "pm_card_visa",
+                    AutomaticPaymentMethods = new PaymentIntentAutomaticPaymentMethodsOptions
+                    {
+                        Enabled = true,
+                        AllowRedirects = "never"
+                    },
+                };
+
+                var service = new PaymentIntentService();
+                PaymentIntent intent = service.Create(options);
+
+                return Ok(new { clientSecret = intent.ClientSecret, ID = intent.Id });
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = $"Error creating payment intent: {ex}" });
+            }
+            
         }
         [HttpPost("CreateTransaction")]
         public IActionResult CreateTransaction(TransactionDTO tran)
         {
-            this.context.Transactions.Add(new Transaction()
+            Transaction t = new Transaction()
             {
                 FirstName = tran.FirstName,
                 LastName = tran.LastName,
@@ -55,24 +63,25 @@ namespace WebApplication1.Controllers
                 PaymentMethod = tran.PaymentMethod,
                 Status = false,
                 ShippingFee = tran.ShippingFee,
-            });
+            };
+            this.context.Transactions.Add(t);
             this.context.SaveChanges();
 
-            return Ok(tran);
+            return Ok(t);
         }
 
-        [HttpGet("ConfirmPaymentIntent")]
-        public IActionResult ConfirmPaymentIntent(string paymentIntentID)
-        {
-            var service = new PaymentIntentService();
+        //[HttpGet("ConfirmPaymentIntent")]
+        //public IActionResult ConfirmPaymentIntent(string paymentIntentID)
+        //{
+        //    var service = new PaymentIntentService();
 
-            var options = new PaymentIntentConfirmOptions
-            {
-                PaymentMethod = "pm_card_visa"
-            };
+        //    var options = new PaymentIntentConfirmOptions
+        //    {
+        //        PaymentMethod = "pm_card_visa"
+        //    };
 
-            var paymentIntent = service.Confirm(paymentIntentID, options);
-            return Ok(paymentIntent);
-        }
+        //    var paymentIntent = service.Confirm(paymentIntentID, options);
+        //    return Ok(paymentIntent);
+        //}
     }
 }

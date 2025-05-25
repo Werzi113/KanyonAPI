@@ -6,7 +6,6 @@ namespace WebApplication1.Models.DTO.Orders
     {
         public int ProductID { get; set; }
         public int Amount { get; set; }
-        public decimal Discount { get; set; }
 
     }
 }
