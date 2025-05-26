@@ -1,7 +1,6 @@
 wwwroot\images\products\10\slepice.png
 wwwroot\images\products\11\slepice.png
 wwwroot\images\products\12\slepice.png
-wwwroot\images\products\13\mixer.png
 wwwroot\images\products\14\pračka.png
 wwwroot\images\products\15\triko.png
 wwwroot\images\products\1\macbook1.png

@@ -675,6 +675,18 @@
         }
       }
     },
+    "/api/Products/Previews/admin": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Products/Previews/Filter": {
       "post": {
         "tags": [
@@ -806,14 +818,14 @@
         }
       }
     },
-    "/api/Products/Update:{id}": {
+    "/api/Products/Update:{productId}": {
       "put": {
         "tags": [
           "Products"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "productId",
             "in": "path",
             "required": true,
             "schema": {
@@ -3279,8 +3291,8 @@
         "type": "object",
         "properties": {
           "amount": {
-            "type": "integer",
-            "format": "int32"
+            "type": "number",
+            "format": "double"
           },
           "currency": {
             "type": "string",

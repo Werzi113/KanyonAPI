@@ -62,10 +62,12 @@ namespace WebApplication1.Services
         }
         public bool IsProductValid(Product p)
         {
-            if (p.Price <= 0) return false;
-            if (p.Discount * p.Price >= p.Price) return false;
-            if (this.context.Products.Find(p.ProductID) != null) return false;
-            if (this.context.Categories.Find(p.CategoryId) == null) return false;   
+            if (p.Price <= 0) 
+                return false;
+            if (p.Discount * p.Price >= p.Price) 
+                return false;
+            if (this.context.Categories.Find(p.CategoryId) == null) 
+                return false;   
 
             return true;
         } 

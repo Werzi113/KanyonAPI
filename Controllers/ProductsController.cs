@@ -19,12 +19,24 @@ namespace WebApplication1.Controllers
 
 
         [HttpGet("Previews/Amount")]
-        public ObjectResult FindProductPreviews(int amount = -1)
+        public ObjectResult GetProductPreviews(int amount = -1)
         {
             string baseUrl = $"{Request.Scheme}://{Request.Host}";
 
             var items = productsService.FindProductPreviews(baseUrl);
             return amount > 0 ? Ok(items.Take(amount).ToArray()) : Ok(items.ToArray());                    
+        }
+        [HttpGet("Previews/admin")]
+        public ObjectResult GetAdminProductPreviewas()
+        {
+            var list = this.context.Products.Select(p => new AdminProductPreview()
+            {
+                Discount = p.Discount,
+                Name = p.Name,
+                Price = p.Price,
+                productId = p.ProductID
+            }).ToList();
+            return Ok(list);
         }
         [HttpPost("Previews/Filter")]
         public ObjectResult FilterProductPreviews(ProductFilter filter, int amount = -1)
@@ -86,15 +98,16 @@ namespace WebApplication1.Controllers
             return Ok(p);
         }
 
-        [HttpPut("Update:{id}")]
-        public IActionResult UpdateProduct(int id, Product newProduct)
+        [HttpPut("Update:{productId}")]
+        public IActionResult UpdateProduct(int productId, Product newProduct)
         {
             if (!this.productsService.IsProductValid(newProduct))
             {
                 return BadRequest(new { message = "Invalid product data" });
             }
 
-            Product p = this.context.Products.Find(id);
+            Product p = this.context.Products.Find(productId);
+
 
 
             p.Name = newProduct.Name;
@@ -116,6 +129,14 @@ namespace WebApplication1.Controllers
             {
                 return false;
             }
+
+            var pictures = this.context.ProductPictures.Where(pic => pic.ProductID == id).ToList();
+            this.context.ProductPictures.RemoveRange(pictures);
+            this.context.SaveChanges();
+
+            var service = new ProductPicturesService();
+            service.DeleteProductPictures(id);
+
 
             this.context.Products.Remove(p);
             this.context.SaveChanges();

@@ -486,7 +486,17 @@
   },
   {
     "ContainingType": "WebApplication1.Controllers.ProductsController",
-    "Method": "FindProductPreviews",
+    "Method": "GetAdminProductPreviewas",
+    "RelativePath": "api/Products/Previews/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ProductsController",
+    "Method": "GetProductPreviews",
     "RelativePath": "api/Products/Previews/Amount",
     "HttpMethod": "GET",
     "IsController": true,
@@ -534,13 +544,13 @@
   {
     "ContainingType": "WebApplication1.Controllers.ProductsController",
     "Method": "UpdateProduct",
-    "RelativePath": "api/Products/Update:{id}",
+    "RelativePath": "api/Products/Update:{productId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "productId",
         "Type": "System.Int32",
         "IsRequired": true
       },

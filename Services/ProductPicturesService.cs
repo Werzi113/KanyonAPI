@@ -49,7 +49,22 @@ namespace WebApplication1.Services
         public void DeletePictureFile(string filePath)
         {
             string root = Directory.GetCurrentDirectory();
-            System.IO.File.Delete(Path.Combine(root, "wwwroot", filePath));
+            System.IO.File.Delete(root + "\\wwwroot" + filePath);
+        }
+        public void DeleteProductPictures(int id)
+        {
+            string root = Directory.GetCurrentDirectory();
+            foreach (var item in this.context.ProductPictures.Where(pic => pic.ProductID == id))
+            {
+                this.DeletePictureFile(item.PicturePath);
+            }
+            string path = Path.Combine(root, "wwwroot\\images\\products\\", id.ToString());
+
+            if (Directory.Exists(path))
+            {
+                Directory.Delete(path, true);
+            }
+
         }
 
         public ValidationResult CanBeUploaded(ProductPictureUploadDTO pic, string path)
