@@ -76,7 +76,7 @@ namespace WebApplication1.Controllers
                 return NotFound("Category doesn't exist");
             }
 
-            var res = _categoryService.getAllChildrenOfCategory(id);
+            var res = _categoryService.getAllChildrenOfCategory(id).ToArray();
 
             return Ok(res);
         }
@@ -149,7 +149,7 @@ namespace WebApplication1.Controllers
                 return NotFound("Category doesn't exist");
             }
 
-            var children = _categoryService.getAllChildrenOfCategory(id);
+            var children = _categoryService.getAllChildrenOfCategory(id).ToArray();
             if (children.Any(item => item.CategoryID == categoryDTO.ParentID))
             {
                 return StatusCode(403, "Category can't have its child as a parent");

@@ -23,9 +23,13 @@ namespace WebApplication1.Services
         }
         public IQueryable<ProductPreviewDTO> FilterByCategory(IQueryable<ProductPreviewDTO> query, int? categoryID)
         {
-            if (categoryID.HasValue)
+            
+            CategoryService s = new CategoryService();
+            if (categoryID != null)
             {
-                return query.Where(p => p.CategoryID == categoryID);
+                return query.Where(product => s.getAllChildrenOfCategory((int)categoryID)
+                            .Select(cat => cat.CategoryID)
+                            .Contains(product.CategoryID));
             }
             return query;
         }

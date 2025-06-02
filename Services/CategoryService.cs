@@ -7,7 +7,7 @@ namespace WebApplication1.Services
     {
         private MyContext _context = new MyContext();
 
-        public Category[] getAllChildrenOfCategory(int id)
+        public IQueryable<Category> getAllChildrenOfCategory(int id)
         {
             return _context.Categories.FromSqlInterpolated($@"
                 WITH recursive Nodes as (
@@ -18,7 +18,7 @@ namespace WebApplication1.Services
 	            Nodes as n
                 WHERE cat.parentID = n.CategoryID
                 )
-                select * from Nodes").ToArray();
+                select * from Nodes");
         }
     }
 }
