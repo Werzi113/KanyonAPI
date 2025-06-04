@@ -49,7 +49,7 @@ namespace WebApplication1.Controllers
             items = filterService.FilterByName(items, filter.Name);
             items = filterService.FilterByCategory(items, filter.CategoryID);
 
-            return amount > 0 ? Ok(items.Take(amount).ToArray()) : Ok(items.ToArray());
+            return amount > 0 ? Ok(items.Take(amount)) : Ok(items);
         }
 
         [HttpGet("ProductNamePairs")]
