@@ -27,7 +27,7 @@ namespace WebApplication1.Services
             CategoryService s = new CategoryService();
             if (categoryID != null)
             {
-                return query.Where(product => s.getAllChildrenOfCategory((int)categoryID)
+                return query.Where(product => s.getAllChildrenOfCategory((int)categoryID).ToArray()
                             .Select(cat => cat.CategoryID)
                             .Contains(product.CategoryID));
             }

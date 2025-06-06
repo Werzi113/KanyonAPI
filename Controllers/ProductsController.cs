@@ -39,7 +39,7 @@ namespace WebApplication1.Controllers
             return Ok(list);
         }
         [HttpPost("Previews/Filter")]
-        public ObjectResult FilterProductPreviews(ProductFilter filter, int amount = -1)
+        public ObjectResult FilterProductPreviews(ProductFilter filter,[FromQuery] int amount = -1)
         {
             string baseUrl = $"{Request.Scheme}://{Request.Host}";
 
