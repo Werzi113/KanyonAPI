@@ -2,9 +2,8 @@
 {
     public class ProductPictureUploadDTO
     {
-        public IFormFile File { get; set; }
+        public string ImageBase64 { get; set; }
         public int ProductId { get; set; }
-        public string Description { get; set; }
         public bool IsPreview { get; set; } = false;
     }
 }

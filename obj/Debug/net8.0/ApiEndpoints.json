@@ -323,8 +323,24 @@
   },
   {
     "ContainingType": "WebApplication1.Controllers.ProductPicturesController",
-    "Method": "GetProductPictures",
+    "Method": "GetProductPicturesPaths",
     "RelativePath": "api/ProductPictures/{productID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ProductPicturesController",
+    "Method": "GetProductPicturesAdminPreviews",
+    "RelativePath": "api/ProductPictures/{productID}/AdminPreviews",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -367,45 +383,36 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "WebApplication1.Controllers.ProductPicturesController",
-    "Method": "UploadImage",
-    "RelativePath": "api/ProductPictures/Upload-image",
+    "Method": "SetPreviewPicture",
+    "RelativePath": "api/ProductPictures/SetPreview:{pictureID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pictureID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ProductPicturesController",
+    "Method": "UploadImages",
+    "RelativePath": "api/ProductPictures/Upload-images",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "File",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "ProductId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "IsPreview",
-        "Type": "System.Boolean",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "WebApplication1.Models.DTO.Products.ProductPictureUploadDTO[]",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

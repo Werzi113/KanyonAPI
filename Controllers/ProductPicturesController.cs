@@ -5,6 +5,7 @@ using WebApplication1.Models;
 using WebApplication1.Models.DTO.Products;
 using System.IO;
 using WebApplication1.Services;
+using WebApplication1.Models.DTO.ProductPictures;
 
 
 namespace WebApplication1.Controllers
@@ -32,7 +33,7 @@ namespace WebApplication1.Controllers
 
         }
         [HttpGet("{productID}")]
-        public IActionResult GetProductPictures(int productID)
+        public IActionResult GetProductPicturesPaths(int productID)
         {
             List<string> result = new List<string>();
             var pictures = context.ProductPictures.Where(picture => picture.ProductID == productID).ToList();
@@ -51,14 +52,54 @@ namespace WebApplication1.Controllers
 
             return Ok(result);
         }
-
-        [HttpDelete("Delete:{pictureID}")]
-        public bool DeleteProductPicture(int pictureID)
+        [HttpGet("{productID}/AdminPreviews")]
+        public IActionResult GetProductPicturesAdminPreviews(int productID)
+        {
+            var pictures = this.context.ProductPictures.Where(pic => pic.ProductID == productID);
+            if (pictures.Count() < 1)
+            {
+                return Ok(pictures);
+            }
+            else
+            {
+                return Ok(pictures.Select(picture => new ProductPictureDTO()
+                {
+                    PictureID = picture.PictureID,
+                    ProductID = picture.ProductID,
+                    IsPreview = picture.IsPreview,
+                    URL = $"{Request.Scheme}://{Request.Host}{picture.PicturePath}"
+                }).ToList());
+            }
+        }
+        [HttpPut("SetPreview:{pictureID}")]
+        public IActionResult SetPreviewPicture(int pictureID)
         {
             var pic = context.ProductPictures.Find(pictureID);
             if (pic == null)
             {
-                return false;
+                return NotFound(new { message = "Picture not found" });
+            }
+            if (pic.IsPreview)
+            {
+                return BadRequest(new { message = "This picture is already a preview" });
+            }
+            var currentPreview = context.ProductPictures.FirstOrDefault(p => p.ProductID == pic.ProductID && p.IsPreview);
+            if (currentPreview != null)
+            {
+                currentPreview.IsPreview = false;
+            }
+            pic.IsPreview = true;
+            context.SaveChanges();
+            return Ok(new { message = "Preview picture updated successfully" });
+        }
+
+        [HttpDelete("Delete:{pictureID}")]
+        public IActionResult DeleteProductPicture(int pictureID)
+        {
+            var pic = context.ProductPictures.Find(pictureID);
+            if (pic == null)
+            {
+                return BadRequest(new { Message = "No picture found" });
             }
 
             this.service.DeletePictureFile(pic.PicturePath);
@@ -66,43 +107,36 @@ namespace WebApplication1.Controllers
             this.context.ProductPictures.Remove(pic);
             this.context.SaveChanges();
 
-            return true;
+            return Ok(new { Messsage = "Picture deleted successfully!" });
         }
-
-        [HttpPost("Upload-image")]
-
-        public IActionResult UploadImage(ProductPictureUploadDTO pic)
+        [HttpPost("Upload-images")]
+        public IActionResult UploadImages(ProductPictureUploadDTO[] dto)
         {
-
-            var fileName = Path.GetFileName(pic.File.FileName);
-            var relativePath = $"/images/products/{pic.ProductId}/{fileName}";
-
-            var validation = this.service.CanBeUploaded(pic, relativePath);
-
-            if (!validation.Succeeded)
+            ProductPicturesService service = new ProductPicturesService();
+            
+            foreach (var item in dto)
             {
-                return BadRequest(validation.Message);
+                var validationResult = service.CanBeUploaded(item);
+                if (!validationResult.Succeeded)
+                {
+                    return BadRequest(validationResult.Message);
+                }
+                service.SavePicture(item, out string relativePath);
+
+                ProductPicture picture = new ProductPicture()
+                {
+                    PicturePath = $"\\{relativePath}",
+                    ProductID = item.ProductId,
+                    Description = "",
+                    IsPreview = false,
+                };
+                this.context.ProductPictures.Add(picture);
             }
-
-
-            if (!this.service.SavePictureFile(pic))
-            {
-                return BadRequest("File isn't allowed");
-            }
-
-            ProductPicture picture = new ProductPicture
-            {
-                ProductID = pic.ProductId,
-                PicturePath = relativePath,
-                Description = pic.Description,
-                IsPreview = pic.IsPreview
-            };
-
-            this.context.ProductPictures.Add(picture);
             this.context.SaveChanges();
 
-            return Ok(new { imagePath = relativePath });
-        }
 
+
+            return Ok(new { message = "Pictures uploaded successfully" });
+        }
     }
 }

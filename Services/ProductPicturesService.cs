@@ -21,27 +21,28 @@ namespace WebApplication1.Services
 
             return previewPicture == null ? null : $"{baseURL}{previewPicture.PicturePath}";
         }
-        public bool SavePictureFile(ProductPictureUploadDTO pic)
+        public bool SavePicture(ProductPictureUploadDTO pic, out string relativePath)
         {
-            var extension = Path.GetExtension(pic.File.FileName);
-            if (!allowedFileSuffixes.Contains(extension))
+            var parts = pic.ImageBase64.Split(',');
+            string metadata = parts[0];
+            string extension = "." + metadata.Split('/')[1].Split(';')[0];
+
+            var fileName = $"product_" + pic.ProductId + "_" + DateTime.Now.Ticks + extension;
+
+            // Složka pro obrázky produktu
+            string folderRelative = Path.Combine("images", "products", pic.ProductId.ToString());
+            string folderAbsolute = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", folderRelative);
+
+            if (!Directory.Exists(folderAbsolute))
             {
-                return false;
+                Directory.CreateDirectory(folderAbsolute);
             }
 
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "products", pic.ProductId.ToString());
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
+            relativePath = Path.Combine(folderRelative, fileName);
+            string filePath = Path.Combine(folderAbsolute, fileName);
 
-            var fileName = Path.GetFileName(pic.File.FileName);
-            var filePath = Path.Combine(path, fileName);
-
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                pic.File.CopyTo(stream);
-            }
+            byte[] fileBytes = Convert.FromBase64String(parts[1]);
+            System.IO.File.WriteAllBytes(filePath, fileBytes);
 
             return true;
         }
@@ -67,21 +68,35 @@ namespace WebApplication1.Services
 
         }
 
-        public ValidationResult CanBeUploaded(ProductPictureUploadDTO pic, string path)
+        public ValidationResult CanBeUploaded(ProductPictureUploadDTO pic)
         {
             ValidationResult result = new ValidationResult()
             {
                 Succeeded = false
             };
-
-            if (pic.File == null || pic.File.Length == 0)
+            string metadata;
+            string extension;
+            try
             {
-                result.Message = "No file uploaded";
+                metadata = pic.ImageBase64.Split(',')[0];
+                extension = "." + metadata.Split('/')[1].Split(';')[0];
+
+            }
+            catch
+            {
+                result.Message = "Wrong file format";
                 return result;
             }
-            if (this.context.ProductPictures.Any(img => img.PicturePath == path))
+
+
+            if (!allowedFileSuffixes.Contains(extension))
             {
-                result.Message = "Provided picture already exists for this product";
+                result.Message = "File isn't allowed";
+                return result;
+            }
+            if (string.IsNullOrEmpty(pic.ImageBase64))
+            {
+                result.Message = "No file uploaded";
                 return result;
             }
             if (this.context.Products.Find(pic.ProductId) == null)

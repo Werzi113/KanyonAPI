@@ -556,6 +556,52 @@
         }
       }
     },
+    "/api/ProductPictures/{productID}/AdminPreviews": {
+      "get": {
+        "tags": [
+          "ProductPictures"
+        ],
+        "parameters": [
+          {
+            "name": "productID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProductPictures/SetPreview:{pictureID}": {
+      "put": {
+        "tags": [
+          "ProductPictures"
+        ],
+        "parameters": [
+          {
+            "name": "pictureID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/ProductPictures/Delete:{pictureID}": {
       "delete": {
         "tags": [
@@ -574,72 +620,39 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/ProductPictures/Upload-image": {
+    "/api/ProductPictures/Upload-images": {
       "post": {
         "tags": [
           "ProductPictures"
         ],
-        "parameters": [
-          {
-            "name": "ProductId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "Description",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "IsPreview",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "File": {
-                    "type": "string",
-                    "format": "binary"
-                  }
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProductPictureUploadDTO"
                 }
-              },
-              "encoding": {
-                "File": {
-                  "style": "form"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProductPictureUploadDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProductPictureUploadDTO"
                 }
               }
             }
@@ -3361,6 +3374,23 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductPictureUploadDTO": {
+        "type": "object",
+        "properties": {
+          "imageBase64": {
+            "type": "string",
+            "nullable": true
+          },
+          "productId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isPreview": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
